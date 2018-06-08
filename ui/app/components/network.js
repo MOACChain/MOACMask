@@ -134,7 +134,7 @@ Network.prototype.render = function () {
             return h('.network-indicator', [
               h(NetworkDropdownIcon, {
                 backgroundColor: '#ff0000', // $red
-                nonSelectBackgroundColor: '#ecb23e',
+                nonSelectBackgroundColor: '#ff0000',
               }),
               h('.network-name', context.t('MOACmain')),
               h('i.fa.fa-chevron-down.fa-lg.network-caret'),
@@ -143,7 +143,7 @@ Network.prototype.render = function () {
             return h('.network-indicator', [
               h(NetworkDropdownIcon, {
                 backgroundColor: '#0000ff', // $blue
-                nonSelectBackgroundColor: '#ecb23e',
+                nonSelectBackgroundColor: '#0000ff',
               }),
               h('.network-name', context.t('MOACtest')),
               h('i.fa.fa-chevron-down.fa-lg.network-caret'),

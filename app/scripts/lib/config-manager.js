@@ -163,9 +163,13 @@ ConfigManager.prototype.getCurrentRpcAddress = function () {
 
     case 'rinkeby':
       return RINKEBY_RPC_URL
+    case 'MOACmain':
+      return MOACMAIN_RPC_URL
+    case 'MOACtest':
+      return MOACTEST_RPC_URL
 
     default:
-      return provider && provider.rpcTarget ? provider.rpcTarget : RINKEBY_RPC_URL
+      return provider && provider.rpcTarget ? provider.rpcTarget : MOACTEST_RPC_URL
   }
 }
 

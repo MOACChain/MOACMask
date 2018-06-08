@@ -2,6 +2,7 @@ module.exports = getBuyEthUrl
 
 /**
  * Gives the caller a url at which the user can acquire eth, depending on the network they are in
+ * For MOAC, just pointing to the 
  *
  * @param {object} opts Options required to determine the correct url
  * @param {string} opts.network The network for which to return a url
@@ -28,6 +29,12 @@ function getBuyEthUrl ({ network, amount, address }) {
 
     case '42':
       url = 'https://github.com/kovan-testnet/faucet'
+      break
+    case '99':
+      url = 'https://www.coinbene.com/#/market?pairId=MOACUSDT'
+      break
+    case '101':
+      url = 'https://github.com/MOACChain/chain3/issues/1'
       break
   }
   return url

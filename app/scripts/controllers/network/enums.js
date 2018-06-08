@@ -2,29 +2,40 @@ const ROPSTEN = 'ropsten'
 const RINKEBY = 'rinkeby'
 const KOVAN = 'kovan'
 const MAINNET = 'mainnet'
+const MOACMAIN = 'MOACmain'
+const MOACTEST = 'MOACtest'
 const LOCALHOST = 'localhost'
 
 const ROPSTEN_CODE = 3
 const RINKEYBY_CODE = 4
 const KOVAN_CODE = 42
+const MOACMAIN_CODE = 99
+const MOACTEST_CODE = 101
 
 const ROPSTEN_DISPLAY_NAME = 'Ropsten'
 const RINKEBY_DISPLAY_NAME = 'Rinkeby'
 const KOVAN_DISPLAY_NAME = 'Kovan'
 const MAINNET_DISPLAY_NAME = 'Main Ethereum Network'
-
+const MOACMAIN_DISPLAY_NAME = 'MOAC main network'
+const MOACTEST_DISPLAY_NAME = 'MOAC test network'
 
 module.exports = {
   ROPSTEN,
   RINKEBY,
   KOVAN,
+  MOACMAIN,
+  MOACTEST,
   MAINNET,
   LOCALHOST,
   ROPSTEN_CODE,
   RINKEYBY_CODE,
   KOVAN_CODE,
+  MOACMAIN_CODE,
+  MOACTEST_CODE,
   ROPSTEN_DISPLAY_NAME,
   RINKEBY_DISPLAY_NAME,
   KOVAN_DISPLAY_NAME,
   MAINNET_DISPLAY_NAME,
+  MOACMAIN_DISPLAY_NAME,
+  MOACTEST_DISPLAY_NAME,
 }
