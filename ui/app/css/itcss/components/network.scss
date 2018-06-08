@@ -29,6 +29,14 @@
   &.rinkeby-test-network .menu-icon-circle div {
     background-color: rgba(235, 179, 63, .7) !important;
   }
+
+  &.moac-main-network .menu-icon-circle div {
+    background-color: rgba(255, 0, 0, .7) !important;
+  }
+
+  &.moac-test-network .menu-icon-circle div {
+    background-color: rgba(0, 0, 255, .7) !important;
+  }
 }
 
 .dropdown-menu-item {

@@ -203,6 +203,50 @@ NetworkDropdown.prototype.render = function () {
     h(
       DropdownMenuItem,
       {
+        key: 'MOACmain',
+        closeMenu: () => this.props.hideNetworkDropdown(),
+        onClick: () => props.setProviderType('MOACmain'),
+        style: dropdownMenuItemStyle,
+      },
+      [
+        providerType === 'MOACmain' ? h('i.fa.fa-check') : h('.network-check__transparent', '✓'),
+        h(NetworkDropdownIcon, {
+          backgroundColor: '#f6c343', // $saffron
+          isSelected: providerType === 'MOACmain',
+        }),
+        h('span.network-name-item', {
+          style: {
+            color: providerType === 'MOACmain' ? '#ffffff' : '#9b9b9b',
+          },
+        }, this.context.t('MOACmain')),
+      ]
+    ),
+
+    h(
+      DropdownMenuItem,
+      {
+        key: 'MOACtest',
+        closeMenu: () => this.props.hideNetworkDropdown(),
+        onClick: () => props.setProviderType('MOACtest'),
+        style: dropdownMenuItemStyle,
+      },
+      [
+        providerType === 'MOACtest' ? h('i.fa.fa-check') : h('.network-check__transparent', '✓'),
+        h(NetworkDropdownIcon, {
+          backgroundColor: '#f6c343', // $saffron
+          isSelected: providerType === 'MOACtest',
+        }),
+        h('span.network-name-item', {
+          style: {
+            color: providerType === 'MOACtest' ? '#ffffff' : '#9b9b9b',
+          },
+        }, this.context.t('MOACtest')),
+      ]
+    ),
+    
+    h(
+      DropdownMenuItem,
+      {
         key: 'default',
         closeMenu: () => this.props.hideNetworkDropdown(),
         onClick: () => props.setProviderType('localhost'),
@@ -264,6 +308,10 @@ NetworkDropdown.prototype.getNetworkName = function () {
     name = this.context.t('kovan')
   } else if (providerName === 'rinkeby') {
     name = this.context.t('rinkeby')
+  } else if (providerName === 'MOACmain') {
+    name = this.context.t('MOACmain')
+  } else if (providerName === 'MOACtest') {
+    name = this.context.t('MOACtest')
   } else {
     name = this.context.t('unknownNetwork')
   }

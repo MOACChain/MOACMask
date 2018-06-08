@@ -118,7 +118,6 @@
     "fast-levenshtein": "^2.0.6",
     "file-loader": "^1.1.11",
     "fuse.js": "^3.2.0",
-    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-debug": "^3.2.0",
     "gulp-eslint": "^4.0.0",
@@ -237,7 +236,7 @@
     "geckodriver": "^1.11.0",
     "gh-pages": "^1.1.0",
     "gifencoder": "^1.1.0",
-    "gulp": "github:gulpjs/gulp#6d71a658c61edb3090221579d8f97dbe086ba2ed",
+    "gulp": "git://github.com/gulpjs/gulp.git#6d71a658c61edb3090221579d8f97dbe086ba2ed",
     "gulp-babel": "^7.0.0",
     "gulp-eslint": "^4.0.0",
     "gulp-json-editor": "^2.2.1",
@@ -298,7 +297,8 @@
     "through2": "^2.0.3",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
-    "watchify": "^3.9.0"
+    "watchify": "^3.9.0",
+    "webpack": "^4.0.0"
   },
   "engines": {
     "node": ">=8.0.0"

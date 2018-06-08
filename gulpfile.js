@@ -253,7 +253,7 @@ gulp.task('dev:scss', createScssBuildTask({
 function createScssBuildTask({ src, dest, devMode, pattern }) {
   return function () {
     if (devMode) {
-      watch(pattern, async (event) => {
+      watch(pattern, async(event)=> {
         const stream = buildScss()
         await endOfStream(stream)
         livereload.changed(event.path)

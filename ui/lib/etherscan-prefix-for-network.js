@@ -13,6 +13,12 @@ module.exports = function (network) {
       break
     case 42: // kovan test net
       prefix = 'kovan.'
+      break    
+    case 99: // MOAC main net
+      prefix = 'MOACmain.'
+      break
+    case 101: // kovan test net
+      prefix = 'MOACtest.'
       break
     default:
       prefix = ''

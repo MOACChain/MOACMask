@@ -141,7 +141,16 @@ class Settings extends Component {
         value = this.context.t('rinkeby')
         color = '#ebb33f'
         break
-
+      case 'MOACmain':
+        title = this.context.t('currentNetwork')
+        value = this.context.t('MOACmain')
+        color = '#ff0000'
+        break
+      case 'MOACtest':
+        title = this.context.t('currentNetwork')
+        value = this.context.t('MOACtest')
+        color = '#0000ff'
+        break
       default:
         title = this.context.t('currentRpc')
         value = provider.rpcTarget

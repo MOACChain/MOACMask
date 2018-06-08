@@ -1,5 +1,8 @@
 module.exports = function (network) {
   const net = parseInt(network)
+  /*
+   * Setup the network ID with the network name
+  */
   let prefix
   switch (net) {
     case 1: // main net
@@ -13,6 +16,12 @@ module.exports = function (network) {
       break
     case 42: // kovan test net
       prefix = 'kovan.'
+      break
+    case 99: // MOAC main net
+      prefix = 'MOACmain.'
+      break
+    case 101: // kovan test net
+      prefix = 'MOACtest.'
       break
     default:
       prefix = ''
