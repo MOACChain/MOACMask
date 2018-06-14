@@ -1,8 +1,8 @@
 const ObservableStore = require('obs-store')
 const { warn } = require('loglevel')
 
-// By default, poll every 3 minutes
-const DEFAULT_INTERVAL = 180 * 1000
+// By default, poll every 10 minutes
+const DEFAULT_INTERVAL = 600 * 1000
 
 /**
  * A controller that polls for token exchange

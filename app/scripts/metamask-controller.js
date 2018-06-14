@@ -256,6 +256,8 @@ module.exports = class MetamaskController extends EventEmitter {
         const result = []
         const selectedAddress = this.preferencesController.getSelectedAddress()
 
+
+
         // only show address if account is unlocked
         if (isUnlocked && selectedAddress) {
           result.push(selectedAddress)
@@ -1227,6 +1229,7 @@ module.exports = class MetamaskController extends EventEmitter {
    * @returns {Promise<String>} - The RPC Target URL confirmed.
    */
   async setCustomRpc (rpcTarget) {
+    console.log("Current signer is", this.getVersion())
     this.networkController.setRpcTarget(rpcTarget)
     await this.preferencesController.updateFrequentRpcList(rpcTarget)
     return rpcTarget

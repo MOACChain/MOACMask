@@ -1184,6 +1184,14 @@ h2.page-subtitle {
     border-color: #ebb33f; }
     .network-component.pointer.rinkeby-test-network .menu-icon-circle div {
       background-color: rgba(235, 179, 63, 0.7) !important; }
+  .network-component.pointer.moac-main-network {
+    border-color: #0000ff; }
+    .network-component.pointer.moac-main-network .menu-icon-circle div {
+      background-color: rgba(0, 0, 255, 0.7) !important; }
+  .network-component.pointer.moac-test-network {
+    border-color: #ff0000; }
+    .network-component.pointer.moac-test-network .menu-icon-circle div {
+      background-color: rgba(235, 0, 0, 0.7) !important; }
 
 .dropdown-menu-item .menu-icon-circle,
 .dropdown-menu-item .menu-icon-circle--active {

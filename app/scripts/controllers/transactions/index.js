@@ -90,8 +90,10 @@ class TransactionController extends EventEmitter {
     const networkState = this.networkStore.getState()
     const getChainId = parseInt(networkState)
     if (Number.isNaN(getChainId)) {
+      console.log("Invalid chain ID!!!")
       return 0
     } else {
+      console.log("Find chain ID = ", getChainId)
       return getChainId
     }
   }

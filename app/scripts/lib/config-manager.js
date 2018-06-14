@@ -1,10 +1,15 @@
 const ethUtil = require('ethereumjs-util')
 const normalize = require('eth-sig-util').normalize
+/*
+ * Added MOAC URL
+*/
 const {
   MAINNET_RPC_URL,
   ROPSTEN_RPC_URL,
   KOVAN_RPC_URL,
   RINKEBY_RPC_URL,
+  MOACMAIN_RPC_URL,
+  MOACTEST_RPC_URL,
 } = require('../controllers/network/enums')
 
 /* The config-manager is a convenience object
@@ -150,6 +155,7 @@ ConfigManager.prototype.getProvider = function () {
 ConfigManager.prototype.getCurrentRpcAddress = function () {
   var provider = this.getProvider()
   if (!provider) return null
+    console.log("Get provider type:", provider.type);
   switch (provider.type) {
 
     case 'mainnet':

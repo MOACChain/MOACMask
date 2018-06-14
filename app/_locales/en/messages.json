@@ -688,6 +688,12 @@
   "rinkeby": {
     "message": "Rinkeby Test Network"
   },
+  "MOACmain": {
+    "message": "MOAC main Network"
+  },
+  "MOACtest": {
+    "message": "MOAC test Network"
+  },
   "ropsten": {
     "message": "Ropsten Test Network"
   },
@@ -695,7 +701,7 @@
     "message": "Custom RPC"
   },
   "currentRpc": {
-    "message": "Current RPC"
+    "message": "Current RPC with MOAC signing"
   },
   "connectingToMainnet": {
     "message": "Connecting to Main Ethereum Network"
@@ -708,6 +714,12 @@
   },
   "connectingToRinkeby": {
     "message": "Connecting to Rinkeby Test Network"
+  },
+  "connectingToMOACmain": {
+    "message": "Connecting to MOAC Main Network"
+  },
+    "connectingToMOACtest": {
+    "message": "Connecting to MOAC Test Network"
   },
   "connectingToUnknown": {
     "message": "Connecting to Unknown Network"

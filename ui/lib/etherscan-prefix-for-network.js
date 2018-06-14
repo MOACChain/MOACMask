@@ -17,7 +17,7 @@ module.exports = function (network) {
     case 99: // MOAC main net
       prefix = 'MOACmain.'
       break
-    case 101: // kovan test net
+    case 101: // MOAC test net
       prefix = 'MOACtest.'
       break
     default:

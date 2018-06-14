@@ -249,6 +249,16 @@ function currentProviderDisplay (metamaskState) {
       value = 'Rinkeby Test Network'
       break
 
+    case 'MOACmain':
+      title = 'Current Network'
+      value = 'MOAC Main Network'
+      break
+
+    case 'MOACtest':
+      title = 'Current Network'
+      value = 'MOAC Test Network'
+      break
+
     default:
       title = 'Current RPC'
       value = metamaskState.provider.rpcTarget

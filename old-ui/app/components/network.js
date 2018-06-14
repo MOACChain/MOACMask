@@ -55,6 +55,12 @@ Network.prototype.render = function () {
   } else if (providerName === 'rinkeby') {
     hoverText = 'Rinkeby Test Network'
     iconName = 'rinkeby-test-network'
+  } else if (providerName === 'MOACmain') {
+    hoverText = 'MOAC Main Network'
+    iconName = 'moac-main-network'
+  } else if (providerName === 'MOACtest') {
+    hoverText = 'MOAC Test Network'
+    iconName = 'moac-test-network'
   } else {
     hoverText = 'Unknown Private Network'
     iconName = 'unknown-private-network'
@@ -108,6 +114,26 @@ Network.prototype.render = function () {
               'Rinkeby Test Net'),
               props.onClick && h('i.fa.fa-caret-down.fa-lg'),
             ])
+          case 'moac-main-network':
+            return h('.network-indicator', [
+              h('.menu-icon.red-dot'),
+              h('.network-name', {
+                style: {
+                  color: '#0000ff',
+                }},
+              'MOAC main Net'),
+              props.onClick && h('i.fa.fa-caret-down.fa-lg'),
+            ])
+          case 'moac-test-network':
+            return h('.network-indicator', [
+              h('.menu-icon.blue-dot'),
+              h('.network-name', {
+                style: {
+                  color: '#e7a218',
+                }},
+              'MOAC Test Net'),
+              props.onClick && h('i.fa.fa-caret-down.fa-lg'),
+            ])  
           default:
             return h('.network-indicator', [
               h('i.fa.fa-question-circle.fa-lg', {

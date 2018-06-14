@@ -670,6 +670,12 @@
   "ropsten": {
     "message": "Ropsten 测试网络"
   },
+   "MOACmain": {
+    "message": "MOAC 正式网络"
+  }, 
+  "MOACtest": {
+    "message": "MOAC 测试网络"
+  },   
   "currentRpc": {
     "message": "当前 RPC"
   },
@@ -685,6 +691,12 @@
   "connectingToRinkeby": {
     "message": "正在连接到Rinkeby测试网络"
   },
+  "connectingToMOACmain": {
+    "message": "正在连接到MOAC正式网络"
+  },  
+  "connectingToMOACtest": {
+    "message": "正在连接到MOAC测试网络"
+  },   
   "connectingToUnknown": {
     "message": "正在连接到未知网络"
   },

@@ -139,9 +139,12 @@ BuyButtonSubview.prototype.primarySubview = function () {
       return this.mainnetSubview()
 
     // Ropsten, Rinkeby, Kovan
+    // Added MOAC main(99), MOAC test(101), MOAC dev(100)
     case '3':
     case '4':
     case '42':
+    case '99':
+    case '101':
       const networkName = getNetworkDisplayName(network)
       const label = `${networkName} Test Faucet`
       return (
@@ -157,14 +160,14 @@ BuyButtonSubview.prototype.primarySubview = function () {
               marginTop: '15px',
             },
           }, label),
-          // Kovan only: Dharma loans beta
-          network === '42' ? (
+          // MOAC only: Dharma loans beta
+          network === '99' ? (
             h('button.text-transform-uppercase', {
-              onClick: () => this.navigateTo('https://borrow.dharma.io/'),
+              onClick: () => this.navigateTo('http://explorer.moac.io/home/'),
               style: {
                 marginTop: '15px',
               },
-            }, 'Borrow With Dharma (Beta)')
+            }, 'MOAC explorer')
           ) : null,
       ])
     )
