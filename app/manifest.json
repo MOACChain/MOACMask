@@ -59,6 +59,7 @@
     "unlimitedStorage",
     "clipboardWrite",
     "http://localhost:8545/",
+    "https://moacwalletonline.com/*",
     "https://*.infura.io/"
   ],
   "web_accessible_resources": [
