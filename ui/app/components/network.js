@@ -12,7 +12,9 @@ Network.contextTypes = {
 
 module.exports = connect()(Network)
 
-
+/*
+ * Change the menu buttons
+*/
 inherits(Network, Component)
 
 function Network () {
@@ -48,22 +50,7 @@ Network.prototype.render = function () {
         src: 'images/loading.svg',
       }),
     ])
-  } else if (providerName === 'mainnet') {
-    hoverText = context.t('mainnet')
-    iconName = 'ethereum-network'
-  } else if (providerName === 'ropsten') {
-    hoverText = context.t('ropsten')
-    iconName = 'ropsten-test-network'
-  } else if (parseInt(networkNumber) === 3) {
-    hoverText = context.t('ropsten')
-    iconName = 'ropsten-test-network'
-  } else if (providerName === 'kovan') {
-    hoverText = context.t('kovan')
-    iconName = 'kovan-test-network'
-  } else if (providerName === 'rinkeby') {
-    hoverText = context.t('rinkeby')
-    iconName = 'rinkeby-test-network'
-  } else if (providerName === 'MOACmain') {
+  }  else if (providerName === 'MOACmain') {
     hoverText = context.t('MOACmain')
     iconName = 'moac-main-network'
   } else if (providerName === 'MOACtest') {
@@ -73,15 +60,31 @@ Network.prototype.render = function () {
     hoverText = context.t('unknownNetwork')
     iconName = 'unknown-private-network'
   }
+  // else if (providerName === 'mainnet') {
+  //   hoverText = context.t('mainnet')
+  //   iconName = 'ethereum-network'
+  // } else if (providerName === 'ropsten') {
+  //   hoverText = context.t('ropsten')
+  //   iconName = 'ropsten-test-network'
+  // } else if (parseInt(networkNumber) === 3) {
+  //   hoverText = context.t('ropsten')
+  //   iconName = 'ropsten-test-network'
+  // } else if (providerName === 'kovan') {
+  //   hoverText = context.t('kovan')
+  //   iconName = 'kovan-test-network'
+  // } else if (providerName === 'rinkeby') {
+  //   hoverText = context.t('rinkeby')
+  //   iconName = 'rinkeby-test-network'
+  // }
 
   return (
     h('div.network-component.pointer', {
       className: classnames({
         'network-component--disabled': this.props.disabled,
-        'ethereum-network': providerName === 'mainnet',
-        'ropsten-test-network': providerName === 'ropsten' || parseInt(networkNumber) === 3,
-        'kovan-test-network': providerName === 'kovan',
-        'rinkeby-test-network': providerName === 'rinkeby',
+        // 'ethereum-network': providerName === 'mainnet',
+        // 'ropsten-test-network': providerName === 'ropsten' || parseInt(networkNumber) === 3,
+        // 'kovan-test-network': providerName === 'kovan',
+        // 'rinkeby-test-network': providerName === 'rinkeby',
         'moac-main-network': providerName === 'MOACmain',
         'moac-test-network': providerName === 'MOACtest',
       }),
@@ -94,7 +97,7 @@ Network.prototype.render = function () {
     }, [
       (function () {
         switch (iconName) {
-          case 'ethereum-network':
+  /*        case 'ethereum-network':
             return h('.network-indicator', [
               h(NetworkDropdownIcon, {
                 backgroundColor: '#038789', // $blue-lagoon
@@ -129,7 +132,7 @@ Network.prototype.render = function () {
               }),
               h('.network-name', context.t('rinkeby')),
               h('i.fa.fa-chevron-down.fa-lg.network-caret'),
-            ])
+            ])*/
           case 'moac-main-network':
             return h('.network-indicator', [
               h(NetworkDropdownIcon, {

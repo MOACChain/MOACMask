@@ -193,7 +193,7 @@
     "message": "Decimals of Precision"
   },
   "defaultNetwork": {
-    "message": "The default network for Ether transactions is Main Net."
+    "message": "The default network for MOAC transactions is MOACmain."
   },
   "denExplainer": {
     "message": "Your DEN is your password-encrypted storage within MetaMask."
@@ -209,10 +209,10 @@
     "description": "Tells the user what coin they have selected to deposit with shapeshift"
   },
   "depositEth": {
-    "message": "Deposit Eth"
+    "message": "Deposit MC"
   },
   "depositEther": {
-    "message": "Deposit Ether"
+    "message": "Deposit MOAC"
   },
   "depositFiat": {
     "message": "Deposit with Fiat"

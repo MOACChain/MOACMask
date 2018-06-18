@@ -19,7 +19,8 @@ const {
   LOCALHOST,
 } = require('./enums')
 const LOCALHOST_RPC_URL = 'http://localhost:8545'
-const INFURA_PROVIDER_TYPES = [ROPSTEN, RINKEBY, KOVAN, MAINNET, MOACMAIN, MOACTEST]
+const INFURA_PROVIDER_TYPES = [ROPSTEN, RINKEBY, KOVAN, MAINNET,MOACMAIN, MOACTEST]
+const MOAC_PROVIDER_TYPES = [MOACMAIN, MOACTEST]
 
 const env = process.env.METAMASK_ENV
 const METAMASK_DEBUG = process.env.METAMASK_DEBUG
@@ -91,13 +92,18 @@ module.exports = class NetworkController extends EventEmitter {
       type: 'rpc',
       rpcTarget,
     }
+    log.info("setRpcTarget:"+rpcTarget)
     this.providerConfig = providerConfig
   }
 
+//Add MOAC provider
   async setProviderType (type) {
     assert.notEqual(type, 'rpc', `NetworkController - cannot call "setProviderType" with type 'rpc'. use "setRpcTarget"`)
-    assert(INFURA_PROVIDER_TYPES.includes(type) || type === LOCALHOST, `NetworkController - Unknown rpc type "${type}"`)
+    // assert(INFURA_PROVIDER_TYPES.includes(type) || type === LOCALHOST, `NetworkController - Unknown rpc type "${type}"`)
+    
+    assert(INFURA_PROVIDER_TYPES.includes(type) || MOAC_PROVIDER_TYPES.includes(type) || type === LOCALHOST, `NetworkController - Unknown rpc type "${type}"`)
     const providerConfig = { type }
+    // console.log
     this.providerConfig = providerConfig
   }
 
@@ -128,8 +134,13 @@ module.exports = class NetworkController extends EventEmitter {
     const { type, rpcTarget } = opts
     // infura type-based endpoints
     const isInfura = INFURA_PROVIDER_TYPES.includes(type)
+    const isMoac = INFURA_PROVIDER_TYPES.includes(type)
     if (isInfura) {
+
       this._configureInfuraProvider(opts)
+    // other type-based rpc endpoints
+    }else if( isMoac){
+      this._configureMoacProvider(opts)
     // other type-based rpc endpoints
     } else if (type === LOCALHOST) {
       this._configureStandardProvider({ rpcUrl: LOCALHOST_RPC_URL })
@@ -139,6 +150,22 @@ module.exports = class NetworkController extends EventEmitter {
     } else {
       throw new Error(`NetworkController - _configureProvider - unknown type "${type}"`)
     }
+  }
+
+//Modify to use only MOAC, set to hard code, not using 
+  _configureMoacProvider ({ type }) {
+    log.info('_configureInfuraProvider', type)
+    const infuraProvider = createInfuraProvider({ network: type })
+    const infuraSubprovider = new SubproviderFromProvider(infuraProvider)
+    const providerParams = extend(this._baseProviderParams, {
+      engineParams: {
+        pollingInterval: 8000,
+        blockTrackerProvider: infuraProvider,
+      },
+      dataSubprovider: infuraSubprovider,
+    })
+    const provider = createMetamaskProvider(providerParams)
+    this._setProvider(provider)
   }
 
   _configureInfuraProvider ({ type }) {

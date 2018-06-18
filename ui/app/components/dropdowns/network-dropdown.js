@@ -112,7 +112,7 @@ NetworkDropdown.prototype.render = function () {
       ),
     ]),
 
-    h(
+  /*  h(
       DropdownMenuItem,
       {
         key: 'main',
@@ -199,7 +199,7 @@ NetworkDropdown.prototype.render = function () {
         }, this.context.t('rinkeby')),
       ]
     ),
-
+*/
     h(
       DropdownMenuItem,
       {
@@ -211,7 +211,7 @@ NetworkDropdown.prototype.render = function () {
       [
         providerType === 'MOACmain' ? h('i.fa.fa-check') : h('.network-check__transparent', '✓'),
         h(NetworkDropdownIcon, {
-          backgroundColor: '#f6c343', // $saffron
+          backgroundColor: '#29B6AF', // $saffron
           isSelected: providerType === 'MOACmain',
         }),
         h('span.network-name-item', {
@@ -300,15 +300,16 @@ NetworkDropdown.prototype.getNetworkName = function () {
 
   let name
 
-  if (providerName === 'mainnet') {
-    name = this.context.t('mainnet')
-  } else if (providerName === 'ropsten') {
-    name = this.context.t('ropsten')
-  } else if (providerName === 'kovan') {
-    name = this.context.t('kovan')
-  } else if (providerName === 'rinkeby') {
-    name = this.context.t('rinkeby')
-  } else if (providerName === 'MOACmain') {
+  // if (providerName === 'mainnet') {
+  //   name = this.context.t('mainnet')
+  // } else if (providerName === 'ropsten') {
+  //   name = this.context.t('ropsten')
+  // } else if (providerName === 'kovan') {
+  //   name = this.context.t('kovan')
+  // } else if (providerName === 'rinkeby') {
+  //   name = this.context.t('rinkeby')
+  // } else if (providerName === 'MOACmain') {
+  if (providerName === 'MOACmain') { 
     name = this.context.t('MOACmain')
   } else if (providerName === 'MOACtest') {
     name = this.context.t('MOACtest')
