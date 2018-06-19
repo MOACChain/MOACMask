@@ -256,74 +256,107 @@ App.prototype.renderNetworkDropdown = function () {
     },
   }, [
 
-    h(
+    // h(
+    //   DropdownMenuItem,
+    //   {
+    //     key: 'main',
+    //     closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
+    //     onClick: () => props.dispatch(actions.setProviderType('mainnet')),
+    //     style: {
+    //       fontSize: '18px',
+    //     },
+    //   },
+    //   [
+    //     h('.menu-icon.diamond'),
+    //     'Main Ethereum Network',
+    //     providerType === 'mainnet' ? h('.check', '✓') : null,
+    //   ]
+    // ),
+
+    // h(
+    //   DropdownMenuItem,
+    //   {
+    //     key: 'ropsten',
+    //     closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
+    //     onClick: () => props.dispatch(actions.setProviderType('ropsten')),
+    //     style: {
+    //       fontSize: '18px',
+    //     },
+    //   },
+    //   [
+    //     h('.menu-icon.red-dot'),
+    //     'Ropsten Test Network',
+    //     providerType === 'ropsten' ? h('.check', '✓') : null,
+    //   ]
+    // ),
+
+    // h(
+    //   DropdownMenuItem,
+    //   {
+    //     key: 'kovan',
+    //     closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
+    //     onClick: () => props.dispatch(actions.setProviderType('kovan')),
+    //     style: {
+    //       fontSize: '18px',
+    //     },
+    //   },
+    //   [
+    //     h('.menu-icon.hollow-diamond'),
+    //     'Kovan Test Network',
+    //     providerType === 'kovan' ? h('.check', '✓') : null,
+    //   ]
+    // ),
+
+    // h(
+    //   DropdownMenuItem,
+    //   {
+    //     key: 'rinkeby',
+    //     closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
+    //     onClick: () => props.dispatch(actions.setProviderType('rinkeby')),
+    //     style: {
+    //       fontSize: '18px',
+    //     },
+    //   },
+    //   [
+    //     h('.menu-icon.golden-square'),
+    //     'Rinkeby Test Network',
+    //     providerType === 'rinkeby' ? h('.check', '✓') : null,
+    //   ]
+    // ),
+
+   h(
       DropdownMenuItem,
       {
-        key: 'main',
+        key: 'MOACmain',
         closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
-        onClick: () => props.dispatch(actions.setProviderType('mainnet')),
+        onClick: () => props.dispatch(actions.setProviderType('MOACmain')),
         style: {
           fontSize: '18px',
         },
       },
       [
         h('.menu-icon.diamond'),
-        'Main Ethereum Network',
-        providerType === 'mainnet' ? h('.check', '✓') : null,
+        'MOAC Main Network',
+        providerType === 'MOACmain' ? h('.check', '✓') : null,
       ]
     ),
 
     h(
       DropdownMenuItem,
       {
-        key: 'ropsten',
+        key: 'MOACtest',
         closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
-        onClick: () => props.dispatch(actions.setProviderType('ropsten')),
+        onClick: () => props.dispatch(actions.setProviderType('MOACtest')),
         style: {
           fontSize: '18px',
         },
       },
       [
         h('.menu-icon.red-dot'),
-        'Ropsten Test Network',
-        providerType === 'ropsten' ? h('.check', '✓') : null,
+        'MOAC Test Network',
+        providerType === 'MOACtest' ? h('.check', '✓') : null,
       ]
     ),
-
-    h(
-      DropdownMenuItem,
-      {
-        key: 'kovan',
-        closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
-        onClick: () => props.dispatch(actions.setProviderType('kovan')),
-        style: {
-          fontSize: '18px',
-        },
-      },
-      [
-        h('.menu-icon.hollow-diamond'),
-        'Kovan Test Network',
-        providerType === 'kovan' ? h('.check', '✓') : null,
-      ]
-    ),
-
-    h(
-      DropdownMenuItem,
-      {
-        key: 'rinkeby',
-        closeMenu: () => this.setState({ isNetworkMenuOpen: !isOpen }),
-        onClick: () => props.dispatch(actions.setProviderType('rinkeby')),
-        style: {
-          fontSize: '18px',
-        },
-      },
-      [
-        h('.menu-icon.golden-square'),
-        'Rinkeby Test Network',
-        providerType === 'rinkeby' ? h('.check', '✓') : null,
-      ]
-    ),
-
     h(
       DropdownMenuItem,
       {
@@ -569,8 +602,8 @@ App.prototype.renderPrimary = function () {
       log.debug('rendering info screen')
       return h(InfoScreen, {key: 'info'})
 
-    case 'buyEth':
-      log.debug('rendering buy ether screen')
+    case 'buyMOAC':
+      log.debug('rendering buy MOAC screen')
       return h(BuyView, {key: 'buyEthView'})
 
     case 'onboardingBuyEth':
@@ -663,15 +696,20 @@ App.prototype.getNetworkName = function () {
 
   let name
 
-  if (providerName === 'mainnet') {
-    name = 'Main Ethereum Network'
-  } else if (providerName === 'ropsten') {
-    name = 'Ropsten Test Network'
-  } else if (providerName === 'kovan') {
-    name = 'Kovan Test Network'
-  } else if (providerName === 'rinkeby') {
-    name = 'Rinkeby Test Network'
-  } else {
+  // if (providerName === 'mainnet') {
+  //   name = 'Main Ethereum Network'
+  // } else if (providerName === 'ropsten') {
+  //   name = 'Ropsten Test Network'
+  // } else if (providerName === 'kovan') {
+  //   name = 'Kovan Test Network'
+  // } else if (providerName === 'rinkeby') {
+  //   name = 'Rinkeby Test Network'
+
+  if (providerName === 'MOACmain') {
+    name = 'MOAC Main Network'
+  } else if (providerName === 'MOACtest') {
+    name = 'MOAC Test Network'
+  }else {
     name = 'Unknown Private Network'
   }
 

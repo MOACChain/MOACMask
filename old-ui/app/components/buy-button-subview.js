@@ -126,7 +126,9 @@ BuyButtonSubview.prototype.headerSubview = function () {
   )
 }
 
-
+/*
+ * Remove buy for eth networks
+*/
 BuyButtonSubview.prototype.primarySubview = function () {
   const props = this.props
   const network = props.network
@@ -135,14 +137,14 @@ BuyButtonSubview.prototype.primarySubview = function () {
     case 'loading':
       return
 
-    case '1':
-      return this.mainnetSubview()
+    // case '1':
+    //   return this.mainnetSubview()
 
     // Ropsten, Rinkeby, Kovan
     // Added MOAC main(99), MOAC test(101), MOAC dev(100)
-    case '3':
-    case '4':
-    case '42':
+    // case '3':
+    // case '4':
+    // case '42':
     case '99':
     case '101':
       const networkName = getNetworkDisplayName(network)

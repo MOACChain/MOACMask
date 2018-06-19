@@ -199,7 +199,7 @@ ConfirmTxScreen.prototype.render = function () {
 }
 
 function currentTxView (opts) {
-  log.info('rendering current tx view')
+  log.info('rendering current tx view......')
   const { txData } = opts
   const { txParams, msgParams } = txData
 
@@ -232,6 +232,7 @@ ConfirmTxScreen.prototype.buyEth = function (address, event) {
 }
 
 ConfirmTxScreen.prototype.sendTransaction = function (txData, event) {
+  log.info('conf-tx.js: sendTransaction ')
   this.stopPropagation(event)
   this.props.dispatch(actions.updateAndApproveTx(txData))
     .then(() => this.props.history.push(DEFAULT_ROUTE))

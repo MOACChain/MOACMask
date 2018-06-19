@@ -223,31 +223,32 @@ function currentConversionInformation (metamaskState, state) {
   ])
 }
 
+//remove ether networks
 function currentProviderDisplay (metamaskState) {
   var provider = metamaskState.provider
   var title, value
 
   switch (provider.type) {
 
-    case 'mainnet':
-      title = 'Current Network'
-      value = 'Main Ethereum Network'
-      break
+    // case 'mainnet':
+    //   title = 'Current Network'
+    //   value = 'Main Ethereum Network'
+    //   break
 
-    case 'ropsten':
-      title = 'Current Network'
-      value = 'Ropsten Test Network'
-      break
+    // case 'ropsten':
+    //   title = 'Current Network'
+    //   value = 'Ropsten Test Network'
+    //   break
 
-    case 'kovan':
-      title = 'Current Network'
-      value = 'Kovan Test Network'
-      break
+    // case 'kovan':
+    //   title = 'Current Network'
+    //   value = 'Kovan Test Network'
+    //   break
 
-    case 'rinkeby':
-      title = 'Current Network'
-      value = 'Rinkeby Test Network'
-      break
+    // case 'rinkeby':
+    //   title = 'Current Network'
+    //   value = 'Rinkeby Test Network'
+    //   break
 
     case 'MOACmain':
       title = 'Current Network'
