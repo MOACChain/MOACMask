@@ -12,7 +12,7 @@ module.exports = {
 */
 function checkAccount (networkId, account) {
 
-  const mainnetId = 1
+  const mainnetId = 99
   if (networkId !== mainnetId) {
     return
   }

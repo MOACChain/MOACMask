@@ -1,7 +1,8 @@
 const EventEmitter = require('events')
 const ObservableStore = require('obs-store')
 const ethUtil = require('ethereumjs-util')
-const Transaction = require('ethereumjs-tx')
+// const Transaction = require('ethereumjs-tx')
+const Transaction = require('moac-lib')
 const EthQuery = require('ethjs-query')
 const TransactionStateManager = require('./tx-state-manager')
 const TxGasUtil = require('./tx-gas-utils')
@@ -47,7 +48,8 @@ class TransactionController extends EventEmitter {
     this.preferencesStore = opts.preferencesStore || new ObservableStore({})
     this.provider = opts.provider
     this.blockTracker = opts.blockTracker
-    this.signEthTx = opts.signTransaction
+    //this.signEthTx = opts.signTransaction
+this.signMoacTx = opts.signTransaction
     this.getGasPrice = opts.getGasPrice
 
     this.memStore = new ObservableStore({})
@@ -285,11 +287,18 @@ class TransactionController extends EventEmitter {
     const txParams = Object.assign({}, txMeta.txParams, { chainId })
     // sign tx
     const fromAddress = txParams.from
-    const ethTx = new Transaction(txParams)
-    await this.signEthTx(ethTx, fromAddress)
+
+    const moacTx = new Transaction(txParams);
+    // console.log("moactx chainID:", moactx.getChainId())
+    log.info("InTX:",moacTx.toJSON());
+
+    // const ethTx = new Transaction(txParams)
+    await this.signMoacTx(moacTx, fromAddress)
     // set state to signed
     this.txStateManager.setTxStatusSigned(txMeta.id)
-    const rawTx = ethUtil.bufferToHex(ethTx.serialize())
+    // const rawTx = ethUtil.bufferToHex(ethTx.serialize())
+const rawTx = ethUtil.bufferToHex(moacTx.serialize())
+log.info("RawTX:"+rawTx)
     return rawTx
   }
 

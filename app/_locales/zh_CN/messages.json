@@ -30,11 +30,11 @@
     "message": "数量 + Gas"
   },
   "appDescription": {
-    "message": "以太坊浏览器插件",
+    "message": "MOAC浏览器插件",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MetaMaskMoac",
     "description": "The name of the application"
   },
   "approved": {
@@ -483,7 +483,7 @@
     "message": "消息"
   },
   "metamaskDescription": {
-    "message": "MetaMask is a secure identity vault for Ethereum."
+    "message": "MetaMask is a secure identity vault for MOAC."
   },
   "metamaskSeedWords": {
     "message": "MetaMask 助记词"

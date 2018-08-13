@@ -33,7 +33,7 @@
     "message": "Amount + Gas"
   },
   "appDescription": {
-    "message": "Ethereum Browser Extension",
+    "message": "MOAC Browser Extension",
     "description": "The description of the application"
   },
   "appName": {
@@ -87,7 +87,7 @@
     "message": "Buy on Coinbase"
   },
   "buyCoinbaseExplainer": {
-    "message": "Coinbase is the world’s most popular way to buy and sell bitcoin, ethereum, and litecoin."
+    "message": "Coinbase is the world’s most popular way to buy and sell bitcoin, MOAC, and litecoin."
   },
   "ok": {
     "message": "Ok"
@@ -224,7 +224,7 @@
     "message": "Deposit with ShapeShift"
   },
   "depositShapeShiftExplainer": {
-    "message": "If you own other cryptocurrencies, you can trade and deposit Ether directly into your MetaMask wallet. No Account Needed."
+    "message": "If you own other cryptocurrencies, you can trade and deposit MOAC directly into your MetaMask wallet. No Account Needed."
   },
   "details": {
     "message": "Details"
@@ -233,10 +233,10 @@
     "message": "Direct Deposit"
   },
   "directDepositEther": {
-    "message": "Directly Deposit Ether"
+    "message": "Directly Deposit MOAC"
   },
   "directDepositEtherExplainer": {
-    "message": "If you already have some Ether, the quickest way to get Ether in your new wallet by direct deposit."
+    "message": "If you already have some MOAC, the quickest way to get MOAC in your new wallet by direct deposit."
   },
   "done": {
     "message": "Done"
@@ -347,11 +347,11 @@
     "message": "Generating transaction"
   },
   "getEther": {
-    "message": "Get Ether"
+    "message": "Get MOAC"
   },
   "getEtherFromFaucet": {
-    "message": "Get Ether from a faucet for the $1",
-    "description": "Displays network name for Ether faucet"
+    "message": "Get MOAC from a faucet for the $1",
+    "description": "Displays network name for MOAC faucet"
   },
   "greaterThanMin": {
     "message": "must be greater than or equal to $1.",
@@ -374,10 +374,10 @@
     "message": "Hide Token?"
   },
   "howToDeposit": {
-    "message": "How would you like to deposit Ether?"
+    "message": "How would you like to deposit MOAC?"
   },
   "holdEther": {
-    "message": "It allows you to hold ether & tokens, and serves as your bridge to decentralized applications."
+    "message": "It allows you to hold MOAC & tokens, and serves as your bridge to decentralized applications."
   },
   "import": {
     "message": "Import",
@@ -489,13 +489,13 @@
     "message": "seed words only have lowercase characters"
   },
   "mainnet": {
-    "message": "Main Ethereum Network"
+    "message": "Main MOAC Network"
   },
   "message": {
     "message": "Message"
   },
   "metamaskDescription": {
-    "message": "MetaMask is a secure identity vault for Ethereum."
+    "message": "MetaMask is a secure identity vault for MOAC."
   },
   "metamaskSeedWords": {
     "message": "MetaMask Seed Words"
@@ -510,7 +510,7 @@
     "message": "Must select at least 1 token."
   },
   "needEtherInWallet": {
-    "message": "To interact with decentralized applications using MetaMask, you’ll need Ether in your wallet."
+    "message": "To interact with decentralized applications using MetaMask, you’ll need MOAC in your wallet."
   },
   "needImportFile": {
     "message": "You must select a file to import.",
@@ -704,7 +704,7 @@
     "message": "Current RPC with MOAC signing"
   },
   "connectingToMainnet": {
-    "message": "Connecting to Main Ethereum Network"
+    "message": "Connecting to Main MOAC Network"
   },
   "connectingToRopsten": {
     "message": "Connecting to Ropsten Test Network"
@@ -784,17 +784,17 @@
     "message": "Send Tokens"
   },
   "onlySendToEtherAddress": {
-    "message": "Only send ETH to an Ethereum address."
+    "message": "Only send ETH to an MOAC address."
   },
   "onlySendTokensToAccountAddress": {
-    "message": "Only send $1 to an Ethereum account address.",
+    "message": "Only send $1 to an MOAC account address.",
     "description": "displays token symbol"
   },
   "searchTokens": {
     "message": "Search Tokens"
   },
   "sendTokensAnywhere": {
-    "message": "Send Tokens to anyone with an Ethereum account"
+    "message": "Send Tokens to anyone with an MOAC account"
   },
   "settings": {
     "message": "Settings"

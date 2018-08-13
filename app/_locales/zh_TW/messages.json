@@ -30,7 +30,7 @@
     "message": "數額 + Gas"
   },
   "appDescription": {
-    "message": "乙太坊瀏覽器擴充插件",
+    "message": "MOAC瀏覽器擴充插件",
     "description": "The description of the application"
   },
   "appName": {
@@ -474,7 +474,7 @@
     "message": "訊息"
   },
   "metamaskDescription": {
-    "message": "MetaMask 是Ethereum的安全身份識別金庫."
+    "message": "MetaMask 是MOAC的安全身份識別金庫."
   },
   "min": {
     "message": "最小"
@@ -650,7 +650,7 @@
     "message": "當前的 RPC"
   },
   "connectingToMainnet": {
-    "message": "連線到主 Ethereum 網路"
+    "message": "連線到主 MOAC 網路"
   },
   "connectingToRopsten": {
     "message": "連線到 Ropsten 測試網路"

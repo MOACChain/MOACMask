@@ -30,7 +30,7 @@
     "message": "Сумма + газ"
   },
   "appDescription": {
-    "message": "Расширение браузера для Ethereum",
+    "message": "Расширение браузера для MOAC",
     "description": "The description of the application"
   },
   "appName": {
@@ -84,7 +84,7 @@
     "message": "Купить на Coinbase"
   },
   "buyCoinbaseExplainer": {
-    "message": "Биржа Coinbase – это наиболее популярный способ купить или продать bitcoin, ethereum и litecoin."
+    "message": "Биржа Coinbase – это наиболее популярный способ купить или продать bitcoin, MOAC и litecoin."
   },
   "ok": {
     "message": "ОК"
@@ -187,7 +187,7 @@
     "message": "Количество десятичных разрядов"
   },
   "defaultNetwork": {
-    "message": "Основная сеть Ethereum – это сеть по умолчанию для Ether транзакций."
+    "message": "Основная сеть MOAC – это сеть по умолчанию для Ether транзакций."
   },
   "denExplainer": {
     "message": "DEN – это зашифрованное паролем хранилище внутри MetaMask."
@@ -462,13 +462,13 @@
     "message": "ключевая фраза может содержать только символы нижнего регистра"
   },
   "mainnet": {
-    "message": "Основная сеть Ethereum"
+    "message": "Основная сеть MOAC"
   },
   "message": {
     "message": "Сообщение"
   },
   "metamaskDescription": {
-    "message": "MetaMask – безопасный кошелек для Ethereum."
+    "message": "MetaMask – безопасный кошелек для MOAC."
   },
   "min": {
     "message": "Минимум"
@@ -644,7 +644,7 @@
     "message": "Current RPC"
   },
   "connectingToMainnet": {
-    "message": "Соединение с основной сетью Ethereum"
+    "message": "Соединение с основной сетью MOAC"
   },
   "connectingToRopsten": {
     "message": "Соединение с тестовой сетью Ropsten"
@@ -706,13 +706,13 @@
     "message": "Отправить токены"
   },
   "onlySendToEtherAddress": {
-    "message": "Отправляйте ETH только на Ethereum адреса."
+    "message": "Отправляйте ETH только на MOAC адреса."
   },
   "searchTokens": {
     "message": "Поиск токенов"
   },
   "sendTokensAnywhere": {
-    "message": "Отправить токены любому, у кого есть счет Ethereum"
+    "message": "Отправить токены любому, у кого есть счет MOAC"
   },
   "settings": {
     "message": "Настройки"

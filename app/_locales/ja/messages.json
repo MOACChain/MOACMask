@@ -30,7 +30,7 @@
     "message": "金額 + ガス"
   },
   "appDescription": {
-    "message": "Ethereumのブラウザ・エクステンション",
+    "message": "MOACのブラウザ・エクステンション",
     "description": "The description of the application"
   },
   "appName": {
@@ -75,7 +75,7 @@
     "message": "Coinbaseのサイトで購入"
   },
   "buyCoinbaseExplainer": {
-    "message": "Etherを購入できます。Coinbaseは、世界的なBitcoin、Ethereum、そしてLitecoinの取引所です。"
+    "message": "Etherを購入できます。Coinbaseは、世界的なBitcoin、MOAC、そしてLitecoinの取引所です。"
   },
   "cancel": {
     "message": "キャンセル"
@@ -393,7 +393,7 @@
     "message": "最大"
   },
   "mainnet": {
-    "message": "Ethereumメインネットワーク"
+    "message": "MOACメインネットワーク"
   },
   "message": {
     "message": "メッセージ"

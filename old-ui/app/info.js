@@ -114,7 +114,7 @@ InfoScreen.prototype.render = function () {
                   target: '_blank',
                 }, [
                   h('img.icon-size', {
-                    src: 'images/icon-128.png',
+                    src: 'images/moac-128.png',
                     style: {
                       // IE6-9
                       filter: 'grayscale(100%)',

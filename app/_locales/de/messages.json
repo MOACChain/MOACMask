@@ -30,7 +30,7 @@
     "message": "Betrag + Gas"
   },
   "appDescription": {
-    "message": "Ethereum Browsererweiterung",
+    "message": "MOAC Browsererweiterung",
     "description": "Die Beschreibung der Erweiterung"
   },
   "appName": {
@@ -84,7 +84,7 @@
     "message": "Auf Coinbase kaufen"
   },
   "buyCoinbaseExplainer": {
-    "message": "Coinbase ist die weltweit bekannteste Art und Weise um bitcoin, ethereum und litecoin zu kaufen und verkaufen."
+    "message": "Coinbase ist die weltweit bekannteste Art und Weise um bitcoin, MOAC und litecoin zu kaufen und verkaufen."
   },
     "ok": {
     "message": "Ok"
@@ -459,13 +459,13 @@
     "message": "Die Wörter der Seed-Wörterfolgen sind alle kleingeschrieben"
   },
   "mainnet": {
-    "message": "Ethereum Main Net"
+    "message": "MOAC Main Net"
   },
   "message": {
     "message": "Nachricht"
   },
   "metamaskDescription": {
-    "message": "MetaMask ist ein sicherer Identitätssafe für Ethereum."
+    "message": "MetaMask ist ein sicherer Identitätssafe für MOAC."
   },
   "min": {
     "message": "Minimum"
@@ -638,7 +638,7 @@
     "message": "Aktueller RPC"
   },
   "connectingToMainnet": {
-    "message": "Verbinde zum Ethereum Main Net"
+    "message": "Verbinde zum MOAC Main Net"
   },
   "connectingToRopsten": {
     "message": " Verbinde zum Ropsten Testnetzwerk"
@@ -700,10 +700,10 @@
     "message": "Token senden"
   },
   "onlySendToEtherAddress": {
-    "message": "ETH unbedingt nur zu einer Ethereum Adresse senden."
+    "message": "ETH unbedingt nur zu einer MOAC Adresse senden."
   },
   "sendTokensAnywhere": {
-    "message": "Token zu einer beliebigen Person mit einem Ethereumaccount senden"
+    "message": "Token zu einer beliebigen Person mit einem MOACaccount senden"
   },
   "settings": {
     "message": "Einstellungen"

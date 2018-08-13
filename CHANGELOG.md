@@ -4,6 +4,9 @@
 
 - Fix bug where account reset did not work with custom RPC providers.
 
+## 0.1.0 Jun 22 2018
+Changed with MOAC signing process
+
 ## 4.7.4 Tue Jun 05 2018
 
 - Add diagnostic reporting for users with multiple HD keyrings

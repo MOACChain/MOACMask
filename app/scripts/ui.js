@@ -14,6 +14,11 @@ const log = require('loglevel')
 
 start().catch(log.error)
 
+/*
+ * When start, 
+ * Debug comments.
+ * 
+*/
 async function start() {
 
   // create platform global
@@ -51,7 +56,10 @@ async function start() {
     // const useBetaCss = isMascara || firstTime || betaUIState
     const useBetaCss = isMascara || betaUIState
 
+    //Debug: Only use OLD UI for testing, 2018/06/25
     let css = useBetaCss ? NewMetaMaskUiCss() : OldMetaMaskUiCss()
+
+    // let css = OldMetaMaskUiCss()
     let deleteInjectedCss = injectCss(css)
     let newBetaUIState
 

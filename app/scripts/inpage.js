@@ -12,7 +12,7 @@ log.setDefaultLevel(process.env.METAMASK_DEBUG ? 'debug' : 'warn')
 //
 // setup plugin communication
 //
-
+//Should update to Chain3 but not yet, 2018/06/22
 // setup background connection
 var metamaskStream = new LocalMessageDuplexStream({
   name: 'inpage',
