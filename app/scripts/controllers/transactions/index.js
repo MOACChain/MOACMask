@@ -49,7 +49,8 @@ class TransactionController extends EventEmitter {
     this.provider = opts.provider
     this.blockTracker = opts.blockTracker
     //this.signEthTx = opts.signTransaction
-this.signMoacTx = opts.signTransaction
+    //The options passed in 
+    this.signMoacTx = opts.signTransaction
     this.getGasPrice = opts.getGasPrice
 
     this.memStore = new ObservableStore({})
@@ -288,11 +289,13 @@ this.signMoacTx = opts.signTransaction
     // sign tx
     const fromAddress = txParams.from
 
+//This transaction was passed in as a parameter for the transactions controller
+//Cannot use moacTx here, 
     const moacTx = new Transaction(txParams);
     // console.log("moactx chainID:", moactx.getChainId())
-    log.info("InTX:",moacTx.toJSON());
+    // log.info("InTX:",moacTx.toJSON());
 
-    // const ethTx = new Transaction(txParams)
+    //This signMoacTx function get private key pair
     await this.signMoacTx(moacTx, fromAddress)
     // set state to signed
     this.txStateManager.setTxStatusSigned(txMeta.id)

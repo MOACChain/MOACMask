@@ -21,7 +21,7 @@ module.exports = function (address, network) {
       link = `http://explorer.moac.io/address/${address}`
       break
     case 101: // moac test net explorer
-      link = `http://http://47.75.144.55:3000/address/${address}`
+      link = `http://testnet.moac.io:3000/address/${address}`
       break
     default:
       link = ''
