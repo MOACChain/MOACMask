@@ -34,19 +34,23 @@ class TokenRatesController {
   }
 
   /**
-   * Fetches a token exchange rate by address
-   *
+   * Fetches a token exchange rate by token contract address
+   * This only works 
    * @param {String} address - Token contract address
    */
   async fetchExchangeRate (address) {
+    //Not available now 
+    /*
     try {
-      const response = await fetch(`https://metamask.balanc3.net/prices?from=${address}&to=ETH&autoConversion=false&summaryOnly=true`)
+      // const response = await fetch(`https://metamask.balanc3.net/prices?from=${address}&to=ETH&autoConversion=false&summaryOnly=true`)
+      const reponse 
       const json = await response.json()
       return json && json.length ? json[0].averagePrice : 0
     } catch (error) {
       warn(`MetaMask - TokenRatesController exchange rate fetch failed for ${address}.`, error)
       return 0
-    }
+    }*/
+    return 0
   }
 
   /**

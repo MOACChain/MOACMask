@@ -112,9 +112,10 @@ class CurrencyController {
       //https://api.coinmarketcap.com/v2/ticker/2403/?convert=USD
       const response = await fetch(`https://api.coinmarketcap.com/v2/ticker/2403/?convert=${currentCurrency.toLowerCase()}`)
       // const response = await fetch(`https://api.infura.io/v1/ticker/eth${currentCurrency.toLowerCase()}`)
-      console.log('currency:',response.json())
+      // console.log('currency:',response.json())
       const parsedResponse = await response.json()
       this.setConversionRate(Number(parsedResponse.data.quotes[currentCurrency.toUpperCase()].price))
+      // console.log("price:", parsedResponse.data.quotes[currentCurrency.toUpperCase()].price)
       this.setConversionDate(Number(parsedResponse.metadata.timestamp))
       // this.setConversionRate(Number(parsedResponse.bid))
       // this.setConversionDate(Number(parsedResponse.timestamp))
