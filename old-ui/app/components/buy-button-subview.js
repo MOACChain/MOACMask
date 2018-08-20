@@ -262,5 +262,7 @@ BuyButtonSubview.prototype.radioHandler = function (event) {
       return this.props.dispatch(actions.coinBaseSubview())
     case 'ShapeShift':
       return this.props.dispatch(actions.shapeShiftSubview(this.props.provider.type))
+    // case 'CoinBene'://满币网
+    //   return this.props.dispatch(actions.coinBeneSubview())
   }
 }

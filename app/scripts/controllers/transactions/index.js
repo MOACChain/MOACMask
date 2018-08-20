@@ -1,8 +1,8 @@
 const EventEmitter = require('events')
 const ObservableStore = require('obs-store')
 const ethUtil = require('ethereumjs-util')
-const Transaction = require('ethereumjs-tx')
-// const Transaction = require('moac-lib')
+// const Transaction = require('ethereumjs-tx')
+const Transaction = require('moac-tx')
 const EthQuery = require('ethjs-query')
 const TransactionStateManager = require('./tx-state-manager')
 const TxGasUtil = require('./tx-gas-utils')
@@ -293,7 +293,7 @@ class TransactionController extends EventEmitter {
 //Cannot use moacTx here, 
     const moacTx = new Transaction(txParams);
     // console.log("moactx chainID:", moactx.getChainId())
-    // log.info("InTX:",moacTx.toJSON());
+    log.info("InTX:",moacTx.toJSON());
 
     //This signMoacTx function get private key pair
     await this.signMoacTx(moacTx, fromAddress)

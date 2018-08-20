@@ -9,7 +9,7 @@ const TxGasUtils = require('../../../../../app/scripts/controllers/transactions/
 const { createTestProviderTools, getTestAccounts } = require('../../../../stub/provider')
 
 const noop = () => true
-const currentNetworkId = 42
+const currentNetworkId = 101
 const otherNetworkId = 36
 
 
