@@ -17,9 +17,11 @@ const {
   MOACMAIN,
   MOACTEST,
   LOCALHOST,
-} = require('./enums')
-const LOCALHOST_RPC_URL = 'http://localhost:8545'
-const INFURA_PROVIDER_TYPES = [ROPSTEN, RINKEBY, KOVAN, MAINNET,MOACMAIN, MOACTEST]
+} = require('./enums');
+const MOAC_MAIN_URL = "https://www.moacwalletonline.com/main";
+const MOAC_TEST_URL = "https://www.moacwalletonline.com/test";
+const LOCALHOST_RPC_URL = 'http://localhost:8545'  //http://18.236.116.159:8545   https://www.moacwalletonline.com/test
+const INFURA_PROVIDER_TYPES = [ROPSTEN, RINKEBY, KOVAN, MAINNET]
 const MOAC_PROVIDER_TYPES = [MOACMAIN, MOACTEST]
 
 const env = process.env.METAMASK_ENV
@@ -134,17 +136,14 @@ module.exports = class NetworkController extends EventEmitter {
     const { type, rpcTarget } = opts
     // infura type-based endpoints
     const isInfura = INFURA_PROVIDER_TYPES.includes(type)
-    const isMoac = INFURA_PROVIDER_TYPES.includes(type)
     if (isInfura) {
-
       this._configureInfuraProvider(opts)
-    // other type-based rpc endpoints
-    }else if( isMoac){
-      this._configureMoacProvider(opts)
-    // other type-based rpc endpoints
+    }else if( type === MOACMAIN){
+      this._configureMoacProvider({rpcUrl: MOAC_MAIN_URL})
+    } else if( type === MOACTEST){
+      this._configureMoacProvider({rpcUrl: MOAC_TEST_URL})
     } else if (type === LOCALHOST) {
       this._configureStandardProvider({ rpcUrl: LOCALHOST_RPC_URL })
-    // url-based rpc endpoints
     } else if (type === 'rpc'){
       this._configureStandardProvider({ rpcUrl: rpcTarget })
     } else {
@@ -153,16 +152,12 @@ module.exports = class NetworkController extends EventEmitter {
   }
 
 //Modify to use only MOAC, set to hard code, not using 
-  _configureMoacProvider ({ type }) {
-    log.info('_configureInfuraProvider', type)
-    const infuraProvider = createInfuraProvider({ network: type })
-    const infuraSubprovider = new SubproviderFromProvider(infuraProvider)
+  _configureMoacProvider ({ rpcUrl }) {
     const providerParams = extend(this._baseProviderParams, {
+      rpcUrl,
       engineParams: {
         pollingInterval: 8000,
-        blockTrackerProvider: infuraProvider,
       },
-      dataSubprovider: infuraSubprovider,
     })
     const provider = createMetamaskProvider(providerParams)
     this._setProvider(provider)

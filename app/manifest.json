@@ -60,7 +60,8 @@
     "clipboardWrite",
     "http://localhost:8545/",
     "https://moacwalletonline.com/*",
-    "https://*.infura.io/"
+    "https://*.infura.io/",
+    "https://www.moacwalletonline.com/*"
   ],
   "web_accessible_resources": [
     "inpage.js"
