@@ -10,8 +10,8 @@ which we dont have access to at the time of this writing.
 const ObservableStore = require('obs-store')
 const ConfigManager = require('../../app/scripts/lib/config-manager')
 const IdentityStoreMigrator = require('../../app/scripts/lib/idStore-migrator')
-// const KeyringController = require('eth-keyring-controller')
-const KeyringController = require('KeyringController');
+const KeyringController = require('eth-keyring-controller')
+// const KeyringController = require('KeyringController');
 
 const password = 'obviously not correct'
 
