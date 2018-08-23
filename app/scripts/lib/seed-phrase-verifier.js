@@ -1,5 +1,5 @@
-const KeyringController = require('eth-keyring-controller')
-// const KeyringController = require('KeyringController')
+// const KeyringController = require('eth-keyring-controller')
+const KeyringController = require('KeyringController')
 const log = require('loglevel')
 
 const seedPhraseVerifier = {
