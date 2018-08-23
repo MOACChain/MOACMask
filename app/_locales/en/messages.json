@@ -37,7 +37,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MetaMask-Moac",
     "description": "The name of the application"
   },
   "approved": {
@@ -78,16 +78,16 @@
     "message": "Borrow With Dharma (Beta)"
   },
   "builtInCalifornia": {
-    "message": "MetaMask is designed and built in California."
+    "message": "MOAC multi-layer blockchain architecture for commercial applications."
   },
   "buy": {
     "message": "Buy"
   },
   "buyCoinbase": {
-    "message": "Buy on Coinbase"
+    "message": "Buy on Coinbine"
   },
   "buyCoinbaseExplainer": {
-    "message": "Coinbase is the world’s most popular way to buy and sell bitcoin, MOAC, and litecoin."
+    "message": "Coinbene is the world’s most popular way to buy and sell bitcoin, MOAC, and litecoin."
   },
   "ok": {
     "message": "Ok"
@@ -196,7 +196,7 @@
     "message": "The default network for MOAC transactions is MOACmain."
   },
   "denExplainer": {
-    "message": "Your DEN is your password-encrypted storage within MetaMask."
+    "message": "Your DEN is your password-encrypted storage within MetaMask-Moac."
   },
   "deposit": {
     "message": "Deposit"
@@ -440,7 +440,7 @@
     "description": "format for importing an account"
   },
   "keepTrackTokens": {
-    "message": "Keep track of the tokens you’ve bought with your MetaMask account."
+    "message": "Keep track of the tokens you’ve bought with your account."
   },
   "kovan": {
     "message": "Kovan Test Network"
@@ -521,7 +521,7 @@
     "description": "Password and file needed to import an account"
   },
   "negativeETH": {
-    "message": "Can not send negative amounts of mc."
+    "message": "Can not send negative amounts of MOAC."
   },
   "networks": {
     "message": "Networks"
@@ -778,13 +778,13 @@
     "message": "Send"
   },
   "sendETH": {
-    "message": "Send mc"
+    "message": "Send ETH"
   },
   "sendTokens": {
-    "message": "Send Tokens on MOAC blockchain"
+    "message": "Send Tokens"
   },
   "onlySendToEtherAddress": {
-    "message": "Only send MC to an MOAC address."
+    "message": "Only send ETH to an MOAC address."
   },
   "onlySendTokensToAccountAddress": {
     "message": "Only send $1 to an MOAC account address.",
@@ -869,7 +869,7 @@
     "message": "To: "
   },
   "toETHviaShapeShift": {
-    "message": "$1 to ETH via ShapeShift",
+    "message": "$1 to MOAC via ShapeShift",
     "description": "system will fill in deposit type in start of message"
   },
   "token": {
@@ -977,7 +977,7 @@
     "message": "Welcome Back!"
   },
   "welcomeBeta": {
-    "message": "Welcome to MetaMask Beta"
+    "message": "Welcome to MetaMask-Moac Beta"
   },
   "whatsThis": {
     "message": "What's this?"

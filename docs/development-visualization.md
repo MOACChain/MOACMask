@@ -13,7 +13,7 @@ From the repo dir, pipe `gource` into `ffmpeg`:
 gource \
   --seconds-per-day .1 \
   --user-scale 1.5 \
-  --default-user-image "./images/icon-512.png" \
+  --default-user-image "./images/moac-128.png" \
   --viewport 1280x720 \
   --auto-skip-seconds .1 \
   --multi-sampling \
