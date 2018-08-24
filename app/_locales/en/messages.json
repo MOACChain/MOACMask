@@ -84,10 +84,10 @@
     "message": "Buy"
   },
   "buyCoinbase": {
-    "message": "Buy on Coinbine"
+    "message": "Buy on Coinbene"
   },
   "buyCoinbaseExplainer": {
-    "message": "Coinbene is the world’s most popular way to buy and sell bitcoin, MOAC, and litecoin."
+    "message": "Coinbene is a exchange to buy and sell MOAC."
   },
   "ok": {
     "message": "Ok"
@@ -777,14 +777,14 @@
   "send": {
     "message": "Send"
   },
-  "sendETH": {
-    "message": "Send ETH"
+  "sendMC": {
+    "message": "Send MC"
   },
   "sendTokens": {
     "message": "Send Tokens"
   },
-  "onlySendToEtherAddress": {
-    "message": "Only send ETH to an MOAC address."
+  "onlySendToMoacAddress": {
+    "message": "Only send MC to an MOAC address."
   },
   "onlySendTokensToAccountAddress": {
     "message": "Only send $1 to an MOAC account address.",

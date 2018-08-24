@@ -554,7 +554,7 @@
   "oldUIMessage": {
     "message": "Regresaste a la antigua UI (Interfaz de Usuario). Puedes regresar a la nueva UI mediante la opcion en la barra desplegable del menu de arriba a la derecha."
   },
-  "onlySendToEtherAddress": {
+  "onlySendToMoacAddress": {
     "message": "Sólo envía a una dirección de MOAC"
   },
   "or": {
@@ -696,7 +696,7 @@
   "send": {
     "message": "Enviar"
   },
-  "sendETH": {
+  "sendMC": {
     "message": "Enviar Ether"
   },
   "sendTokens": {

@@ -693,13 +693,13 @@
   "send": {
     "message": "Senden"
   },
-  "sendETH": {
+  "sendMC": {
     "message": "ETH senden"
   },
   "sendTokens": {
     "message": "Token senden"
   },
-  "onlySendToEtherAddress": {
+  "onlySendToMoacAddress": {
     "message": "ETH unbedingt nur zu einer MOAC Adresse senden."
   },
   "sendTokensAnywhere": {

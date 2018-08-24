@@ -148,8 +148,8 @@ TxList.prototype.view = function (txHash, network) {
 function navigateTo (url) {
   global.platform.openWindow({ url })
 }
-
+//Should check if testnet or not
 function etherscanLinkFor (txHash, network) {
   const prefix = prefixForNetwork(network)
-  return `https://${prefix}etherscan.io/tx/${txHash}`
+  return `https://${prefix}explorer.moac.io/tx/${txHash}`
 }

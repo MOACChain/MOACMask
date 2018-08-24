@@ -19,7 +19,7 @@ function getTitleKey (state) {
   } else if (isToken) {
     return 'sendTokens'
   } else {
-    return 'sendETH'
+    return 'sendMC'
   }
 }
 
@@ -32,6 +32,6 @@ function getSubtitleParams (state) {
     } else if (token) {
       return [ 'onlySendTokensToAccountAddress', [ token.symbol ] ]
     } else {
-      return [ 'onlySendToEtherAddress' ]
+      return [ 'onlySendToMoacAddress' ]
     }
 }

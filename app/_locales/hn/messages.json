@@ -642,7 +642,7 @@
   "send": {
     "message": "भेजें"
   },
-  "sendETH": {
+  "sendMC": {
     "message": "भेजें ETH"
   },
   "sendTokens": {

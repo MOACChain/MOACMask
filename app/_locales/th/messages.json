@@ -642,7 +642,7 @@
   "send": {
     "message": "ส่ง"
   },
-  "sendETH": {
+  "sendMC": {
     "message": "ส่งอีเธอร์"
   },
   "sendTokens": {

@@ -705,13 +705,13 @@
   "send": {
     "message": "發送"
   },
-  "sendETH": {
+  "sendMC": {
     "message": "發送 ETH"
   },
   "sendTokens": {
     "message": "發送代幣"
   },
-  "onlySendToEtherAddress": {
+  "onlySendToMoacAddress": {
     "message": "只發送 ETH 到乙太坊地址."
   },
   "searchTokens": {

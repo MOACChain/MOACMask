@@ -711,13 +711,13 @@
   "send": {
     "message": "Odeslat"
   },
-  "sendETH": {
+  "sendMC": {
     "message": "Odeslat ETH"
   },
   "sendTokens": {
     "message": "Odeslat tokeny"
   },
-  "onlySendToEtherAddress": {
+  "onlySendToMoacAddress": {
     "message": "Posílejte jen ETH na MOAC adresu."
   },
   "searchTokens": {

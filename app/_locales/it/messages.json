@@ -642,7 +642,7 @@
   "send": {
     "message": "Invia"
   },
-  "sendETH": {
+  "sendMC": {
     "message": "Invia ETH"
   },
   "sendTokens": {

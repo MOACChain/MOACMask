@@ -711,13 +711,13 @@
     "send": {
       "message": "Gönder"
     },
-    "sendETH": {
+    "sendMC": {
       "message": "ETH Gönder"
     },
     "sendTokens": {
       "message": "Jeton Gönder"
     },
-    "onlySendToEtherAddress": {
+    "onlySendToMoacAddress": {
       "message": "MOAC adresine sadece ETH gönder."
     },
     "searchTokens": {

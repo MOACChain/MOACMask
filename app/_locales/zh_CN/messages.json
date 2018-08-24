@@ -750,20 +750,20 @@
   "send": {
     "message": "发送"
   },
-  "sendETH": {
-    "message": "发送 ETH"
+  "sendMC": {
+    "message": "发送 MC"
   },
   "sendTokens": {
     "message": "发送 代币"
   },
-  "onlySendToEtherAddress": {
-    "message": "只发送 ETH 给一个以太坊地址"
+  "onlySendToMoacAddress": {
+    "message": "只发送 MC 给一个墨客地址"
   },
   "searchTokens": {
     "message": "搜索代币"
   },
   "sendTokensAnywhere": {
-    "message": "将代币发送给拥有以太坊地址的任何人"
+    "message": "将代币发送给拥有墨客地址的任何人"
   },
   "settings": {
     "message": "设置"

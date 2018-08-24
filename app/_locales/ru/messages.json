@@ -699,13 +699,13 @@
   "send": {
     "message": "Отправить"
   },
-  "sendETH": {
+  "sendMC": {
     "message": "Отправить ETH"
   },
   "sendTokens": {
     "message": "Отправить токены"
   },
-  "onlySendToEtherAddress": {
+  "onlySendToMoacAddress": {
     "message": "Отправляйте ETH только на MOAC адреса."
   },
   "searchTokens": {

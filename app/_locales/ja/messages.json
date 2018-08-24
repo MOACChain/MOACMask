@@ -582,13 +582,13 @@
   "send": {
     "message": "送信"
   },
-  "sendETH": {
+  "sendMC": {
     "message": "ETHの送信"
   },
   "sendTokens": {
     "message": "トークンを送る"
   },
-  "onlySendToEtherAddress": {
+  "onlySendToMoacAddress": {
     "message": "ETHはイーサリウムアカウントのみに送信できます。"
   },
   "searchTokens": {

@@ -711,13 +711,13 @@
   "send": {
     "message": "அனுப்பு"
   },
-  "sendETH": {
+  "sendMC": {
     "message": "ETH ஐ அனுப்பு"
   },
   "sendTokens": {
     "message": "டோக்கன்களை அனுப்பவும்"
   },
-  "onlySendToEtherAddress": {
+  "onlySendToMoacAddress": {
     "message": "ETH ஐ ஒரு எதரியும் முகவரிக்கு மட்டும் அனுப்பவும்."
   },
   "searchTokens": {
