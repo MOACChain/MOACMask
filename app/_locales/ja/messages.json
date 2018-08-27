@@ -181,7 +181,7 @@
   "depositEth": {
     "message": "ETHを入金"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "Etherを振込"
   },
   "depositFiat": {
@@ -202,7 +202,7 @@
   "directDeposit": {
     "message": "ダイレクトデポジット"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "Etherを直接入金"
   },
   "directDepositEtherExplainer": {
@@ -280,7 +280,7 @@
   "gasPriceRequired": {
     "message": "必要ガスプライス"
   },
-  "getEther": {
+  "getMc": {
     "message": "Etherを取得する"
   },
   "getEtherFromFaucet": {
@@ -407,7 +407,7 @@
   "mustSelectOne": {
     "message": "一つ以上のトークンを選択してください。"
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "MetaMaskで分散型アプリケーションを使用するためには、このウォレットにEtherが必要です。"
   },
   "needImportFile": {

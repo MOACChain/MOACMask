@@ -217,7 +217,7 @@
   "depositEth": {
     "message": "Depositar Ether"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "Depositar Ether"
   },
   "depositFiat": {
@@ -238,7 +238,7 @@
   "directDeposit": {
     "message": "Depósito directo"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "Depositar Ether directamente"
   },
   "directDepositEtherExplainer": {
@@ -337,7 +337,7 @@
   "generatingSeed": {
     "message": "Generando semilla..."
   },
-  "getEther": {
+  "getMc": {
     "message": "Conseguir Ether"
   },
   "getEtherFromFaucet": {
@@ -488,7 +488,7 @@
   "myAccounts": {
     "message": "Mis cuentas"
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "Para interactuar con una aplicación descentralizada usando MetaMask, necesitas tener Ether en tu billetera"
   },
   "needImportFile": {

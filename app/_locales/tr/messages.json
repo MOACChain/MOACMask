@@ -205,7 +205,7 @@
     "depositEth": {
       "message": "Eth yatır"
     },
-    "depositEther": {
+    "depositMc": {
       "message": "Ether yatır"
     },
     "depositFiat": {
@@ -226,7 +226,7 @@
     "directDeposit": {
       "message": "Direk Yatırma"
     },
-    "directDepositEther": {
+    "directDepositMc": {
       "message": "Direk Ether Yatırma"
     },
     "directDepositEtherExplainer": {
@@ -331,7 +331,7 @@
     "gasPriceRequired": {
       "message": "Gas Fiyatı Gereklidir"
     },
-    "getEther": {
+    "getMc": {
       "message": "Ether Al"
     },
     "getEtherFromFaucet": {
@@ -485,7 +485,7 @@
     "mustSelectOne": {
       "message": "En az bir jeton seçilmeli"
     },
-    "needEtherInWallet": {
+    "needMcInWallet": {
       "message": "MetaMask kullanarak merkezi olamayan uygulamalarla etkileşmek için cüzdanınızda Ether bulunmalıdır."
     },
     "needImportFile": {

@@ -5,7 +5,7 @@ const {
   bnToHex,
 } = require('../../lib/util')
 const { addHexPrefix } = require('ethereumjs-util')
-const SIMPLE_GAS_COST = '0x5208' // Hex for 21000, cost of a simple send.
+const SIMPLE_GAS_COST = '0x03e8' // Hex for 1000, cost of a simple send, not ETHEREUM'S 0x5208
 
 /**
 tx-gas-utils are gas utility methods for Transaction manager
@@ -21,6 +21,8 @@ class TxGasUtil {
   }
 
   /**
+   * The function is updated with MOAC
+   * TX fees
     @param txMeta {Object} - the txMeta object
     @returns {object} the txMeta object with the gas written to the txParams
   */
@@ -45,6 +47,7 @@ class TxGasUtil {
 
   /**
     Estimates the tx's gas usage
+    Need to update with MOAC gas table
     @param txMeta {Object} - the txMeta object
     @param blockGasLimitHex {string} - hex string of the block's gas limit
     @returns {string} the estimated gas limit as a hex string
@@ -76,7 +79,7 @@ class TxGasUtil {
     const blockGasLimitBN = hexToBn(blockGasLimitHex)
     const saferGasLimitBN = BnMultiplyByFraction(blockGasLimitBN, 19, 20)
     txParams.gas = bnToHex(saferGasLimitBN)
-
+log.infof("Estimated TX gas:", txParams.gas)
     // run tx
     return await this.query.estimateGas(txParams)
   }

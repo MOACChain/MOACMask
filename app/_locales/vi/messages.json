@@ -154,7 +154,7 @@
   "depositEth": {
     "message": "Ký gửi Eth"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "Ký gửi Ether"
   },
   "depositFiat": {
@@ -175,7 +175,7 @@
   "directDeposit": {
     "message": "Ký gửi trực tiếp"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "Ký gửi Ether trực tiếp"
   },
   "directDepositEtherExplainer": {
@@ -253,7 +253,7 @@
   "gasPriceRequired": {
     "message": "Giá ga được yêu cầu"
   },
-  "getEther": {
+  "getMc": {
     "message": "Lấy Ether"
   },
   "getEtherFromFaucet": {
@@ -353,7 +353,7 @@
   "myAccounts": {
     "message": "Tài khoản của tôi"
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "Để tương tác với các ứng dụng phân tán bằng MetaMask, bạn sẽ phải cần có Ether trong ví của bạn."
   },
   "needImportFile": {

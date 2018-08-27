@@ -498,7 +498,7 @@ module.exports = class MetamaskController extends EventEmitter {
   async submitPassword (password) {
     await this.keyringController.submitPassword(password)
     const accounts = await this.keyringController.getAccounts()
-log.debug('submitPassword:'+accounts.length+' accounts found!');
+log.info('submitPassword:'+accounts.length+' accounts found!');
     // verify keyrings
     const nonSimpleKeyrings = this.keyringController.keyrings.filter(keyring => keyring.type !== 'Simple Key Pair')
     if (nonSimpleKeyrings.length > 1 && this.diagnostics) {

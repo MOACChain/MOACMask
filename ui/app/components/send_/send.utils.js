@@ -166,6 +166,24 @@ function doesAmountErrorRequireUpdate ({
   return amountErrorRequiresUpdate
 }
 
+/**
+   * EstimateGas in the TX
+   *
+   * Key notes:
+   * - The seed words can recreate the primary keyring and the accounts belonging to it.
+   * - The created accounts in the primary keyring are always the same.
+   * - The keyring always creates the accounts in the same sequence.
+   *
+   * @param {selectedAddress} The accounts to send the TX
+   * @param {selectedToken} the token to send out
+   * @param {blockGasLimit} 
+   * @param {to} 
+   * @param {value} 
+   * @param {gasPrice} 
+   * @param {estimateGasMethod} 
+   * @returns {SIMPLE_GAS_COST/<void>} GAS cost of the TX
+   *
+  */
 async function estimateGas ({ selectedAddress, selectedToken, blockGasLimit, to, value, gasPrice, estimateGasMethod }) {
   const paramsForGasEstimate = { from: selectedAddress, value, gasPrice }
 
@@ -174,7 +192,7 @@ async function estimateGas ({ selectedAddress, selectedToken, blockGasLimit, to,
     paramsForGasEstimate.data = generateTokenTransferData({ toAddress: to, amount: value, selectedToken })
   }
 
-  // if recipient has no code, gas is 21k max:
+  // if recipient has no code, gas is 1k max:
   const hasRecipient = Boolean(to)
   if (hasRecipient && !selectedToken) {
     const code = await global.eth.getCode(to)
@@ -192,6 +210,7 @@ async function estimateGas ({ selectedAddress, selectedToken, blockGasLimit, to,
     roundDown: '0',
     toNumericBase: 'hex',
   }))
+
   // run tx
   return new Promise((resolve, reject) => {
     return estimateGasMethod(paramsForGasEstimate, (err, estimatedGas) => {

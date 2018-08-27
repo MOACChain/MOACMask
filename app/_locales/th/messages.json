@@ -193,7 +193,7 @@
   "depositEth": {
     "message": "การฝากอีเธอร์"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "การฝากอีเธอร์"
   },
   "depositFiat": {
@@ -214,7 +214,7 @@
   "directDeposit": {
     "message": "ฝากตรง"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "ฝากอีเธอร์โดยตรง"
   },
   "directDepositEtherExplainer": {
@@ -310,7 +310,7 @@
   "gasPriceRequired": {
     "message": "ต้องมีราคาแก๊ส"
   },
-  "getEther": {
+  "getMc": {
     "message": "รับอีเธอร์"
   },
   "getEtherFromFaucet": {
@@ -452,7 +452,7 @@
   "mustSelectOne": {
     "message": "ต้องเลือกอย่างน้อย 1 โทเค็น"
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "คุณจะต้องมีอีเธอร์ในกระเป๋าเงินของคุณในการใช้งานกับแอพพลิเคชันแบบกระจายด้วย MetaMask"
   },
   "needImportFile": {

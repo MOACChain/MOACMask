@@ -211,7 +211,7 @@
   "depositEth": {
     "message": "Deposit MC"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "Deposit MOAC"
   },
   "depositFiat": {
@@ -232,7 +232,7 @@
   "directDeposit": {
     "message": "Direct Deposit"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "Directly Deposit MOAC"
   },
   "directDepositEtherExplainer": {
@@ -278,7 +278,7 @@
     "message": "Passwords Don't Match"
   },
   "etherscanView": {
-    "message": "View account on Etherscan"
+    "message": "View account on MOAC explorer"
   },
   "exchangeRate": {
     "message": "Exchange Rate"
@@ -346,7 +346,7 @@
   "generatingTransaction": {
     "message": "Generating transaction"
   },
-  "getEther": {
+  "getMc": {
     "message": "Get MOAC"
   },
   "getEtherFromFaucet": {
@@ -509,7 +509,7 @@
   "mustSelectOne": {
     "message": "Must select at least 1 token."
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "To interact with decentralized applications using MetaMask, you’ll need MOAC in your wallet."
   },
   "needImportFile": {

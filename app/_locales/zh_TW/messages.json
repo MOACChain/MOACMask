@@ -205,7 +205,7 @@
   "depositEth": {
     "message": "存入 Eth"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "存入 Ether"
   },
   "depositFiat": {
@@ -226,7 +226,7 @@
   "directDeposit": {
     "message": "直接存入"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "直接存入 Ether"
   },
   "directDepositEtherExplainer": {
@@ -331,7 +331,7 @@
   "gasPriceRequired": {
     "message": "必需填寫 Gas 價格"
   },
-  "getEther": {
+  "getMc": {
     "message": "取得 Ether"
   },
   "getEtherFromFaucet": {
@@ -485,7 +485,7 @@
   "mustSelectOne": {
     "message": "必須選擇至少 1 代幣."
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "要使用 MetaMask 存取 DAPP 時，您的錢包中需要有 Ether。"
   },
   "needImportFile": {

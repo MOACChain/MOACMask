@@ -154,7 +154,7 @@
   "depositEth": {
     "message": "I-deposito ang Eth"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "I-deposito ang Ether"
   },
   "depositFiat": {
@@ -175,7 +175,7 @@
   "directDeposit": {
     "message": "Direktang Deposito"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "Direktang I-deposito ang Ether"
   },
   "directDepositEtherExplainer": {
@@ -253,7 +253,7 @@
   "gasPriceRequired": {
     "message": "Kailangan ang Gas Price"
   },
-  "getEther": {
+  "getMc": {
     "message": "Kumuha ng Ether"
   },
   "getEtherFromFaucet": {
@@ -353,7 +353,7 @@
   "myAccounts": {
     "message": "Aking mga Account"
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "Upang makipag-ugnayan sa decentralized applications gamit ang MetaMask, kakailanganin mo ng Ether sa iyong wallet."
   },
   "needImportFile": {

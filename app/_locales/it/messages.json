@@ -193,7 +193,7 @@
   "depositEth": {
     "message": "Deposita Eth"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "Deposita Ether"
   },
   "depositFiat": {
@@ -214,7 +214,7 @@
   "directDeposit": {
     "message": "Deposito Diretto"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "Deposita Direttamente Ether"
   },
   "directDepositEtherExplainer": {
@@ -310,7 +310,7 @@
   "gasPriceRequired": {
     "message": "Prezzo Gas Richiesto"
   },
-  "getEther": {
+  "getMc": {
     "message": "Ottieni Ether"
   },
   "getEtherFromFaucet": {
@@ -452,7 +452,7 @@
   "mustSelectOne": {
     "message": "Devi selezionare almeno un token."
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "Per interagire con applicazioni decentralizzate con MetaMask, devi possedere Ether nel tuo portafoglio."
   },
   "needImportFile": {

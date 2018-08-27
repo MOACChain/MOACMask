@@ -143,7 +143,7 @@ TokenCell.prototype.send = function (address, event) {
 }
 
 TokenCell.prototype.view = function (address, userAddress, network, event) {
-  const url = etherscanLinkFor(address, userAddress, network)
+  const url = moacExplorerLinkFor(address, userAddress, network)
   if (url) {
     navigateTo(url)
   }
@@ -153,9 +153,15 @@ function navigateTo (url) {
   global.platform.openWindow({ url })
 }
 
-function etherscanLinkFor (tokenAddress, address, network) {
-  const prefix = prefixForNetwork(network)
-  return `https://${prefix}etherscan.io/token/${tokenAddress}?a=${address}`
+function moacExplorerLinkFor (tokenAddress, address, network) {
+  // const prefix = prefixForNetwork(network)
+  // return `https://${prefix}etherscan.io/token/${tokenAddress}?a=${address}`
+  if (network == 99){
+    return `https://explorer.moac.io/token/${tokenAddress}?a=${address}`
+  }else if( network == 101){
+    return `http://testnet.moac.io:3000/token/${tokenAddress}?a=${address}`
+  }else
+    return null
 }
 
 function tokenFactoryFor (tokenAddress) {

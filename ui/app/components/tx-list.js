@@ -139,7 +139,7 @@ TxList.prototype.renderTransactionListItem = function (transaction, conversionRa
 }
 
 TxList.prototype.view = function (txHash, network) {
-  const url = etherscanLinkFor(txHash, network)
+  const url = moacExplorerLinkFor(txHash, network)
   if (url) {
     navigateTo(url)
   }
@@ -149,7 +149,13 @@ function navigateTo (url) {
   global.platform.openWindow({ url })
 }
 //Should check if testnet or not
-function etherscanLinkFor (txHash, network) {
-  const prefix = prefixForNetwork(network)
-  return `https://${prefix}explorer.moac.io/tx/${txHash}`
+function moacExplorerLinkFor (txHash, network) {
+  // const prefix = prefixForNetwork(network)
+  if (network == 99){
+    return `https://explorer.moac.io/tx/${txHash}`
+  }else if( network == 101){
+    return `http://testnet.moac.io:3000/tx/${txHash}`
+  }else
+    return null
+  
 }

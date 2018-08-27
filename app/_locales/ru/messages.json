@@ -205,7 +205,7 @@
   "depositEth": {
     "message": "Пополнить Eth"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "Пополнить Ether"
   },
   "depositFiat": {
@@ -226,7 +226,7 @@
   "directDeposit": {
     "message": "Прямое пополнение"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "Прямое пополнение Ether"
   },
   "directDepositEtherExplainer": {
@@ -325,7 +325,7 @@
   "gasPriceRequired": {
     "message": "Установите стоимость газа"
   },
-  "getEther": {
+  "getMc": {
     "message": "Получить Ether"
   },
   "getEtherFromFaucet": {
@@ -479,7 +479,7 @@
   "mustSelectOne": {
     "message": "Необходимо выбрать как минимум 1 токен."
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "Для взаимодействия с децентрализованными приложениями с помощью MetaMask нужен Ether в вашем кошельке."
   },
   "needImportFile": {

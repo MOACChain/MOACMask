@@ -193,7 +193,7 @@
   "depositEth": {
     "message": "Eth जमाआर्थ"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "जमा - Ether"
   },
   "depositFiat": {
@@ -214,7 +214,7 @@
   "directDeposit": {
     "message": "प्रत्यक्ष जमा"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "सीधे ईथर जमा करें"
   },
   "directDepositEtherExplainer": {
@@ -310,7 +310,7 @@
   "gasPriceRequired": {
     "message": "गैस की कीमत आवश्यक है"
   },
-  "getEther": {
+  "getMc": {
     "message": "ईथर प्राप्त करें"
   },
   "getEtherFromFaucet": {
@@ -452,7 +452,7 @@
   "mustSelectOne": {
     "message": "कम से कम 1 टोकन का चयन करना आवश्यक है।"
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "मेटामास्क का उपयोग करने वाले विकेन्द्रीकृत अनुप्रयोगों के साथ बातचीत करने के लिए, आपको अपने वॉलेट में ईथर की आवश्यकता होगी।"
   },
   "needImportFile": {

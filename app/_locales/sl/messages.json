@@ -193,7 +193,7 @@
   "depositEth": {
     "message": "Vplačilo ETH"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "Vplačilo ethera"
   },
   "depositFiat": {
@@ -214,7 +214,7 @@
   "directDeposit": {
     "message": "Direktno vplačilo"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "Direktno vplačilo ehera"
   },
   "directDepositEtherExplainer": {
@@ -310,7 +310,7 @@
   "gasPriceRequired": {
     "message": "Gas price je zahtevan"
   },
-  "getEther": {
+  "getMc": {
     "message": "Pridobite ether"
   },
   "getEtherFromFaucet": {
@@ -452,7 +452,7 @@
   "mustSelectOne": {
     "message": "Izbran mora biti vsaj 1 žeton."
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "Za interakcijo z decentraliziranimi aplikacijami, ki uporabljajo MetaMask, boste v svoji denarnici potrebovali eter."
   },
   "needImportFile": {

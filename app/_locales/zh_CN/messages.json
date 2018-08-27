@@ -208,7 +208,7 @@
   "depositEth": {
     "message": "存入 Eth"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "存入 Ether"
   },
   "depositFiat": {
@@ -229,7 +229,7 @@
   "directDeposit": {
     "message": "直接存入"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "直接存入 Ether"
   },
   "directDepositEtherExplainer": {
@@ -340,7 +340,7 @@
   "generatingTransaction": {
     "message": "生成 交易"
   },
-  "getEther": {
+  "getMc": {
     "message": "获取 Ether"
   },
   "getEtherFromFaucet": {
@@ -497,7 +497,7 @@
   "mustSelectOne": {
     "message": "至少选择一种代币."
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "使用 MetaMask 与 DAPP 交互，需要你的钱包里有 Ether。"
   },
   "needImportFile": {

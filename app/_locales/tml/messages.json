@@ -205,7 +205,7 @@
   "depositEth": {
     "message": "வைப்புத்தொகை எது "
   },
-  "depositEther": {
+  "depositMc": {
     "message": "வைப்புத்தொகை எதிர் "
   },
   "depositFiat": {
@@ -226,7 +226,7 @@
   "directDeposit": {
     "message": "நேரடி வைப்பு"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "நேரடியாக வைப்புத்தொகை"
   },
   "directDepositEtherExplainer": {
@@ -331,7 +331,7 @@
   "gasPriceRequired": {
     "message": "எரிவாயு விலை தேவைப்படுகிறது"
   },
-  "getEther": {
+  "getMc": {
     "message": "ஈத்தர் கிடைக்கும்"
   },
   "getEtherFromFaucet": {
@@ -485,7 +485,7 @@
   "mustSelectOne": {
     "message": "குறைந்தது 1 டோக்கனை தேர்ந்தெடுக்க வேண்டும்."
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "மேடமஸ்க் ஐ பயன்படுத்தி பரவலாக்கப்பட்ட பயன்பாடுகளுடன் தொடர்பு கொள்ள, உங்கள் பணப்பரிமாற்றத்தில் ஈதர் தேவை."
   },
   "needImportFile": {

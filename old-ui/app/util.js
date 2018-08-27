@@ -112,14 +112,14 @@ function formatBalance (balance, decimalsToKeep, needsParse = true) {
       if (afterDecimal !== '0') {
         var sigFigs = afterDecimal.match(/^0*(.{2})/) // default: grabs 2 most significant digits
         if (sigFigs) { afterDecimal = sigFigs[0] }
-        formatted = '0.' + afterDecimal + ' MOAC'
+        formatted = '0.' + afterDecimal + ' MC'
       }
     } else {
-      formatted = beforeDecimal + '.' + afterDecimal.slice(0, 3) + ' MOAC'
+      formatted = beforeDecimal + '.' + afterDecimal.slice(0, 3) + ' MC'
     }
   } else {
     afterDecimal += Array(decimalsToKeep).join('0')
-    formatted = beforeDecimal + '.' + afterDecimal.slice(0, decimalsToKeep) + ' MOAC'
+    formatted = beforeDecimal + '.' + afterDecimal.slice(0, decimalsToKeep) + ' MC'
   }
   return formatted
 }

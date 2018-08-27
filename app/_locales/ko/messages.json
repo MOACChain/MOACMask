@@ -154,7 +154,7 @@
   "depositEth": {
     "message": "이더 입금"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "이더 입금"
   },
   "depositFiat": {
@@ -175,7 +175,7 @@
   "directDeposit": {
     "message": "즉시 입금"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "이더 즉시 입금"
   },
   "directDepositEtherExplainer": {
@@ -253,7 +253,7 @@
   "gasPriceRequired": {
     "message": "가스 가격이 필요합니다."
   },
-  "getEther": {
+  "getMc": {
     "message": "이더 얻기"
   },
   "getEtherFromFaucet": {
@@ -353,7 +353,7 @@
   "myAccounts": {
     "message": "내 계좌"
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "dApp을 이용하기 위해서는 지갑에 이더가 있어야 합니다."
   },
   "needImportFile": {

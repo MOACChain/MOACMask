@@ -205,7 +205,7 @@
   "depositEth": {
     "message": "Vložit Eth"
   },
-  "depositEther": {
+  "depositMc": {
     "message": "Vložit Ether"
   },
   "depositFiat": {
@@ -226,7 +226,7 @@
   "directDeposit": {
     "message": "Přímý vklad"
   },
-  "directDepositEther": {
+  "directDepositMc": {
     "message": "Vložit Ether přímo"
   },
   "directDepositEtherExplainer": {
@@ -331,7 +331,7 @@
   "gasPriceRequired": {
     "message": "Cena paliva je povinná"
   },
-  "getEther": {
+  "getMc": {
     "message": "Získejte Ether"
   },
   "getEtherFromFaucet": {
@@ -485,7 +485,7 @@
   "mustSelectOne": {
     "message": "Musíte zvolit aspoň 1 token."
   },
-  "needEtherInWallet": {
+  "needMcInWallet": {
     "message": "Potřebujete Ether v peněžence, abyste mohli pomocí MetaMasku interagovat s decentralizovanými aplikacemi."
   },
   "needImportFile": {
