@@ -458,7 +458,7 @@ ConfirmSendEther.prototype.render = function () {
 
             h('div.confirm-screen-section-column', [
               h('div.confirm-screen-row-info', `${convertedTotalInFiat} ${currentCurrency.toUpperCase()}`),
-              h('div.confirm-screen-row-detail', `${totalInETH} ETH`),
+              h('div.confirm-screen-row-detail', `${totalInETH} MC`),
             ]),
 
             this.renderErrorMessage('insufficientFunds'),

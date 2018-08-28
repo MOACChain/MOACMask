@@ -80,7 +80,7 @@ export default class SendAmountRow extends Component {
           onBlur={newAmount => this.updateAmount(newAmount)}
           onChange={newAmount => this.validateAmount(newAmount)}
           inError={inError}
-          primaryCurrency={primaryCurrency || 'ETH'}
+          primaryCurrency='MC'//{primaryCurrency || 'ETH'}
           selectedToken={selectedToken}
           value={amount || '0x0'}
         />

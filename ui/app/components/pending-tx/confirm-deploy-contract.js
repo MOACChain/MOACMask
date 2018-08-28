@@ -222,7 +222,7 @@ class ConfirmDeployContract extends Component {
 
         h('div.confirm-screen-section-column', [
           h('div.confirm-screen-row-info', `${fiatAmount + fiatGas} ${currentCurrency.toUpperCase()}`),
-          h('div.confirm-screen-row-detail', `${tokenAmount + ethGas} ETH`),
+          h('div.confirm-screen-row-detail', `${tokenAmount + ethGas} MC`),
         ]),
       ])
     )

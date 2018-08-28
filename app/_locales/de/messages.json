@@ -262,7 +262,7 @@
   "passwordsDontMatch": {
     "message": "Passwörter stimmen nicht überein"
   },
-  "etherscanView": {
+  "moacExplorerView": {
     "message": "Account auf Etherscan anschauen"
   },
   "exchangeRate": {

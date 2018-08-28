@@ -244,7 +244,7 @@
   "enterPasswordConfirm": {
     "message": "ใส่รหัสผ่านอีกครั้งเพื่อยืนยัน"
   },
-  "etherscanView": {
+  "moacExplorerView": {
     "message": "ดูบัญชีบน Etherscan"
   },
   "exchangeRate": {

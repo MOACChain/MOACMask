@@ -196,7 +196,7 @@
   "enterPassword": {
     "message": "Entrer le mot de passe"
   },
-  "etherscanView": {
+  "moacExplorerView": {
     "message": "Afficher le compte sur Etherscan"
   },
   "exchangeRate": {

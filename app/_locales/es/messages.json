@@ -271,7 +271,7 @@
   "enterPasswordConfirm": {
     "message": "Ingresa tu contraseña para confirmar"
   },
-  "etherscanView": {
+  "moacExplorerView": {
     "message": "Ver la cuenta en Etherscan"
   },
   "exchangeRate": {

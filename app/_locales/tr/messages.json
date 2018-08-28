@@ -265,7 +265,7 @@
     "passwordsDontMatch": {
       "message": "Parolalar eşleşmiyor"
     },
-    "etherscanView": {
+    "moacExplorerView": {
       "message": "Hesabı Etherscan üzerinde izle"
     },
     "exchangeRate": {

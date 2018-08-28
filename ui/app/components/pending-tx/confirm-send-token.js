@@ -293,9 +293,10 @@ ConfirmSendToken.prototype.getGasFee = function () {
     numberOfDecimals: decimals || 4,
   })
 
+  // chane the return unit to MC
   return {
     fiat: +Number(FIAT).toFixed(2),
-    eth: ETH,
+    eth: MC,//ETH,
     token: tokenExchangeRate
       ? tokenGas
       : null,

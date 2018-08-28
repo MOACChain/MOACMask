@@ -70,7 +70,7 @@ AccountDetailsModal.prototype.render = function () {
 
       h('button.btn-primary.account-modal__button', {
         onClick: () => global.platform.openWindow({ url: genAccountLink(address, network) }),
-      }, this.context.t('etherscanView')),
+      }, this.context.t('moacExplorerView')),
 
       // Holding on redesign for Export Private Key functionality
       h('button.btn-primary.account-modal__button', {

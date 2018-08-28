@@ -265,7 +265,7 @@
   "passwordsDontMatch": {
     "message": "您所輸入的密碼不一致"
   },
-  "etherscanView": {
+  "moacExplorerView": {
     "message": "在 Etherscan 上查看帳戶"
   },
   "exchangeRate": {

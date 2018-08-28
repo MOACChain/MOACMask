@@ -108,6 +108,7 @@ TxListItem.prototype.getSendEtherTotal = function () {
     return {}
   }
 
+  //dont' change these
   const totalInFiat = conversionUtil(transactionAmount, {
     fromNumericBase: 'hex',
     toNumericBase: 'dec',
@@ -127,8 +128,9 @@ TxListItem.prototype.getSendEtherTotal = function () {
     numberOfDecimals: 6,
   })
 
+  //The following changed the unit in the display
   return {
-    total: `${totalInETH} ETH`,
+    total: `${totalInETH} MC`,
     fiatTotal: `${totalInFiat} ${currentCurrency.toUpperCase()}`,
   }
 }

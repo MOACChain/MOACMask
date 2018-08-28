@@ -265,7 +265,7 @@
   "passwordsDontMatch": {
     "message": "Hesla nejsou stejná"
   },
-  "etherscanView": {
+  "moacExplorerView": {
     "message": "Prohlédněte si účet na Etherscan"
   },
   "exchangeRate": {

@@ -259,7 +259,7 @@
   "enterPasswordConfirm": {
     "message": "Введите ваш пароль для подтверждения"
   },
-  "etherscanView": {
+  "moacExplorerView": {
     "message": "Просмотреть счет на Etherscan"
   },
   "exchangeRate": {

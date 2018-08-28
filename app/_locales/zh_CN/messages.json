@@ -271,7 +271,7 @@
   "passwordsDontMatch": {
     "message": "密码不匹配"
   },
-  "etherscanView": {
+  "moacExplorerView": {
     "message": "在 Etherscan 上查看账户"
   },
   "exchangeRate": {

@@ -303,7 +303,7 @@ class AccountDropdowns extends Component {
               menuItemStyles,
             ),
           },
-          this.context.t('etherscanView'),
+          this.context.t('moacExplorerView'),
         ),
         h(
           DropdownMenuItem,

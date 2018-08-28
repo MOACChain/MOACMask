@@ -196,7 +196,7 @@
   "enterPassword": {
     "message": "패스워드를 입력해주세요."
   },
-  "etherscanView": {
+  "moacExplorerView": {
     "message": "이더스캔에서 계좌보기"
   },
   "exchangeRate": {

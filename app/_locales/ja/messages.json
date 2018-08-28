@@ -223,7 +223,7 @@
   "enterPassword": {
     "message": "パスワードを入力"
   },
-  "etherscanView": {
+  "moacExplorerView": {
     "message": "Etherscanでアカウントを確認"
   },
   "exchangeRate": {
