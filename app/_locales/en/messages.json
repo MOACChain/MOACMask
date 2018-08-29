@@ -784,7 +784,7 @@
     "message": "Send Tokens"
   },
   "onlySendToMoacAddress": {
-    "message": "Only send MC to an MOAC address."
+    "message": "Only send MC to a MOAC address."
   },
   "onlySendTokensToAccountAddress": {
     "message": "Only send $1 to an MOAC account address.",
@@ -925,7 +925,7 @@
     "message": "Welcome to the New UI (Beta)"
   },
   "uiWelcomeMessage": {
-    "message": "You are now using the new Metamask UI."
+    "message": "You are now using the Moacmask UI Beta."
   },
   "unapproved": {
     "message": "Unapproved"

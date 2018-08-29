@@ -293,10 +293,10 @@ ConfirmSendToken.prototype.getGasFee = function () {
     numberOfDecimals: decimals || 4,
   })
 
-  // chane the return unit to MC
+  // change the return unit to MC cause trouble, need for only display
   return {
     fiat: +Number(FIAT).toFixed(2),
-    eth: MC,//ETH,
+    eth: ETH,
     token: tokenExchangeRate
       ? tokenGas
       : null,

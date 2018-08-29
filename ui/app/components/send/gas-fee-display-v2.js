@@ -16,7 +16,7 @@ inherits(GasFeeDisplay, Component)
 function GasFeeDisplay () {
   Component.call(this)
 }
-
+// Convert the ETH display to MC
 GasFeeDisplay.prototype.render = function () {
   const {
     conversionRate,
