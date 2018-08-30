@@ -175,6 +175,7 @@ class ConfirmDeployContract extends Component {
     const { currentCurrency } = this.props
     const { fiat: fiatGas, eth: ethGas } = this.getGasFee()
 
+    //Change the return gas UNIT to MC
     return (
       h('section.flex-row.flex-center.confirm-screen-row', [
         h('span.confirm-screen-label.confirm-screen-section-column', [ this.context.t('gasFee') ]),
@@ -183,7 +184,7 @@ class ConfirmDeployContract extends Component {
 
           h(
             'div.confirm-screen-row-detail',
-            `${ethGas} ETH`
+            `${ethGas} MC`
           ),
         ]),
       ])
