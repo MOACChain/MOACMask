@@ -24,7 +24,7 @@
     "message": "Add Tokens"
   },
   "addAcquiredTokens": {
-    "message": "Add the tokens you've acquired using MetaMask"
+    "message": "Add the tokens you've acquired using MoacMask"
   },
   "amount": {
     "message": "Amount"
@@ -33,11 +33,11 @@
     "message": "Amount + Gas"
   },
   "appDescription": {
-    "message": "MOAC Browser Extension",
+    "message": "MoacMask Browser Extension",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask-Moac",
+    "message": "MoacMask",
     "description": "The name of the application"
   },
   "approved": {
@@ -196,7 +196,7 @@
     "message": "The default network for MOAC transactions is MOACmain."
   },
   "denExplainer": {
-    "message": "Your DEN is your password-encrypted storage within MetaMask-Moac."
+    "message": "Your DEN is your password-encrypted storage within MOAC extension."
   },
   "deposit": {
     "message": "Deposit"
@@ -224,7 +224,7 @@
     "message": "Deposit with ShapeShift"
   },
   "depositShapeShiftExplainer": {
-    "message": "If you own other cryptocurrencies, you can trade and deposit MOAC directly into your MetaMask wallet. No Account Needed."
+    "message": "If you own other cryptocurrencies, you can trade and deposit MOAC directly into your MoacMask wallet. No Account Needed."
   },
   "details": {
     "message": "Details"
@@ -387,7 +387,7 @@
     "message": "Import Account"
   },
   "importAccountMsg": {
-    "message":" Imported accounts will not be associated with your originally created MetaMask account seedphrase. Learn more about imported accounts "
+    "message":" Imported accounts will not be associated with your originally created MoacMask account seedphrase. Learn more about imported accounts "
   },
   "importAnAccount": {
     "message": "Import an account"
@@ -495,10 +495,10 @@
     "message": "Message"
   },
   "metamaskDescription": {
-    "message": "MetaMask is a secure identity vault for MOAC."
+    "message": "MoacMask is a secure identity vault for MOAC."
   },
   "metamaskSeedWords": {
-    "message": "MetaMask Seed Words"
+    "message": "MoacMask Seed Words"
   },
   "min": {
     "message": "Minimum"
@@ -510,7 +510,7 @@
     "message": "Must select at least 1 token."
   },
   "needMcInWallet": {
-    "message": "To interact with decentralized applications using MetaMask, you’ll need MOAC in your wallet."
+    "message": "To interact with decentralized applications using MoacMask, you’ll need MOAC in your wallet."
   },
   "needImportFile": {
     "message": "You must select a file to import.",
@@ -891,7 +891,7 @@
     "message": "Token Symbol"
   },
   "tokenWarning1": {
-    "message": "Keep track of the tokens you’ve bought with your MetaMask account. If you bought tokens using a different account, those tokens will not appear here."
+    "message": "Keep track of the tokens you’ve bought with your MoacMask account. If you bought tokens using a different account, those tokens will not appear here."
   },
   "total": {
     "message": "Total"
@@ -916,16 +916,16 @@
     "description": "Followed by a link (here) to view token balances"
   },
   "twelveWords": {
-    "message": "These 12 words are the only way to restore your MetaMask accounts.\nSave them somewhere safe and secret."
+    "message": "These 12 words are the only way to restore your MoacMask accounts.\nSave them somewhere safe and secret."
   },
   "typePassword": {
     "message": "Type Your Password"
   },
   "uiWelcome": {
-    "message": "Welcome to the New UI (Beta)"
+    "message": "Welcome to the MoacMask UI (Beta)"
   },
   "uiWelcomeMessage": {
-    "message": "You are now using the Moacmask UI Beta."
+    "message": "You are now using the MoacMask UI Beta."
   },
   "unapproved": {
     "message": "Unapproved"
@@ -977,7 +977,7 @@
     "message": "Welcome Back!"
   },
   "welcomeBeta": {
-    "message": "Welcome to MetaMask-Moac Beta"
+    "message": "Welcome to MoacMask Beta"
   },
   "whatsThis": {
     "message": "What's this?"

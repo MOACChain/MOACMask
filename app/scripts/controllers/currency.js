@@ -121,7 +121,7 @@ class CurrencyController {
       // this.setConversionDate(Number(parsedResponse.timestamp))
 
     } catch (err) {
-      log.warn(`MetaMask - Failed to query currency conversion:`, currentCurrency, err)
+      log.warn(`MoacMask - Failed to query currency conversion:`, currentCurrency, err)
       this.setConversionRate(0)
       this.setConversionDate('N/A')
     }

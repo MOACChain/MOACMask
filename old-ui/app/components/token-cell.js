@@ -2,7 +2,7 @@ const Component = require('react').Component
 const h = require('react-hyperscript')
 const inherits = require('util').inherits
 const Identicon = require('./identicon')
-const prefixForNetwork = require('../../lib/etherscan-prefix-for-network')
+// const prefixForNetwork = require('../../lib/etherscan-prefix-for-network')
 
 module.exports = TokenCell
 
