@@ -38,10 +38,10 @@ const dbController = new DbController({
 start().catch(log.error)
 
 async function start() {
-  log.debug('MetaMask initializing...')
+  log.debug('MoacMask initializing...')
   const initState = await loadStateFromPersistence()
   await setupController(initState)
-  log.debug('MetaMask initialization complete.')
+  log.debug('MoacMask initialization complete.')
 }
 
 //

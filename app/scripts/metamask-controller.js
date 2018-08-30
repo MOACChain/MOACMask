@@ -19,7 +19,6 @@ const createOriginMiddleware = require('./lib/createOriginMiddleware')
 const createLoggerMiddleware = require('./lib/createLoggerMiddleware')
 const createProviderMiddleware = require('./lib/createProviderMiddleware')
 const setupMultiplex = require('./lib/stream-utils.js').setupMultiplex
-// const KeyringController = require('KeyringController')
 const KeyringController = require('eth-keyring-controller')
 const NetworkController = require('./controllers/network')
 const PreferencesController = require('./controllers/preferences')
