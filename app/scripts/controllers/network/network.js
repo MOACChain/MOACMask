@@ -24,9 +24,9 @@ const LOCALHOST_RPC_URL = 'http://localhost:8545'
 const INFURA_PROVIDER_TYPES = [ROPSTEN, RINKEBY, KOVAN, MAINNET]
 const MOAC_PROVIDER_TYPES = [MOACMAIN, MOACTEST]
 
-const env = process.env.METAMASK_ENV
-const METAMASK_DEBUG = process.env.METAMASK_DEBUG
-const testMode = (METAMASK_DEBUG || env === 'test')
+const env = process.env.MOACMASK_ENV
+const MOACMASK_DEBUG = process.env.MOACMASK_DEBUG
+const testMode = (MOACMASK_DEBUG || env === 'test')
 
 const defaultProviderConfig = {
   type: testMode ? RINKEBY : MAINNET,

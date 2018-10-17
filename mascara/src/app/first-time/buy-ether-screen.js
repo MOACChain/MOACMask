@@ -57,7 +57,7 @@ class BuyEtherScreen extends Component {
         className='buy-ether__do-it-later'
         onClick={() => showAccountDetail(address)}
       >
-        Do it later
+        Do it laternp
       </div>
     )
   }
