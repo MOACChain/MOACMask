@@ -3,13 +3,14 @@
 
 ## Support
 
-If you're a user seeking support, [here is our support site](https://metamask.helpscoutdocs.com/).
+If you're a user seeking support, [leave your feedbacks at our GIT site](https://github.com/MOACChain/MOACMask/issues).
 
 ## Introduction
 
-[Mission Statement](./MISSION.md)
+To let users and developers easily access MOAC blockchain, we modified provide software for users to manage accounts, for sites to easily propose actions to users, and for users to coherently review actions before approving them. We build on this rapidly evolving set of protocols with the goal of empowering the most people to the greatest degree, and aspire to continuously evolve our offering to pursue that goal.
 
-[Internal documentation](./docs/jsdocs)
+You can refer to MetaMask's introduction page to learn how this works. 
+https://metamask.io/
 
 ## Developing Compatible Dapps
 
@@ -18,7 +19,7 @@ If you're a web dapp developer, we've got two types of guides for you:
 ### New Dapp Developers
 
 - We recommend this [Learning Solidity](https://karl.tech/learning-solidity-part-1-deploy-a-contract/) tutorial series by Karl Floersch.
-- We wrote a (slightly outdated now) gentle introduction on [Developing Dapps with Truffle and MetaMask](https://medium.com/metamask/developing-ethereum-dapps-with-truffle-and-metamask-aa8ad7e363ba).
+- - MetaMask team wrote a gentle introduction on [Developing Dapps with Truffle and MetaMask](https://medium.com/metamask/developing-ethereum-dapps-with-truffle-and-metamask-aa8ad7e363ba).
 
 ### Current Dapp Developers
 
@@ -46,10 +47,6 @@ Then just run `npm test`.
 You can also test with a continuously watching process, via `npm run watch`.
 
 You can run the linter by itself with `gulp lint`.
-
-## Architecture
-
-[![Architecture Diagram](./docs/architecture.png)][1]
 
 ## Development
 

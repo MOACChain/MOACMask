@@ -1,6 +1,6 @@
-# Main MetaMask Code
+# Main MoacMask Code
 
-This folder contains the core-code.
+This folder contains the core-code to control the application.
 
 Currently, it is organized mostly based on file category, like:
 
