@@ -431,6 +431,9 @@
 .color-orange {
   color: #f7861c; }
 
+.color-blue {
+  color: #66ccff; }
+
 .color-forest {
   color: #0a5448; }
 
@@ -750,7 +753,7 @@ hr.horizontal-line {
 
 .check {
   margin-left: 7px;
-  color: #f7861c;
+  color: #66ccff;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
@@ -979,7 +982,7 @@ input[type="submit"][disabled] {
 
 button.primary {
   padding: 8px 12px;
-  background: #f7861c;
+  background: #66ccff;
   -webkit-box-shadow: 0 3px 6px rgba(247, 134, 28, 0.36);
           box-shadow: 0 3px 6px rgba(247, 134, 28, 0.36);
   color: #fff;
@@ -3924,7 +3927,7 @@ textarea.twelve-word-phrase {
 .initialize-screen hr {
   width: 60px;
   margin: 12px;
-  border-color: #f7861c;
+  border-color: #66ccff;
   border-style: solid; }
 
 .initialize-screen label {
@@ -3939,7 +3942,7 @@ textarea.twelve-word-phrase {
 
 /* unlock */
 .error {
-  color: #f7861c;
+  color: #66ccff;
   margin-bottom: 9px; }
 
 .warning {
@@ -4150,7 +4153,7 @@ textarea.twelve-word-phrase {
   margin-bottom: 2px;
   font-size: 11px;
   text-rendering: geometricPrecision;
-  color: #f7861c; }
+  color: #66ccff; }
 
 .name-label:hover .edit-text {
   visibility: visible; }
@@ -4167,7 +4170,7 @@ textarea.twelve-word-phrase {
 
 /* Ether Balance Widget */
 .ether-balance-amount {
-  color: #f7861c; }
+  color: #66ccff; }
 
 .ether-balance-label {
   color: #aba9aa; }
@@ -4202,7 +4205,7 @@ textarea.twelve-word-phrase {
   border-style: double;
   border-radius: 15px;
   border-width: 5px;
-  background: #f7861c;
+  background: #66ccff;
   border-color: #f7f7f7; }
 
 .custom-radio-inactive {
@@ -4214,7 +4217,7 @@ textarea.twelve-word-phrase {
   border-color: #aeaeae; }
 
 .radio-titles {
-  color: #f7861c; }
+  color: #66ccff; }
 
 .eth-warning {
   -webkit-transition: opacity 400ms ease-in, -webkit-transform 400ms ease-in;
@@ -4247,13 +4250,13 @@ textarea.twelve-word-phrase {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   border: solid;
-  border-color: #f7861c;
+  border-color: #66ccff;
   border-width: .5px;
   border-radius: 2px; }
 
 .buy-inputs:focus {
   border: solid;
-  border-color: #f7861c;
+  border-color: #66ccff;
   border-width: .5px;
   border-radius: 2px; }
 
@@ -4322,7 +4325,7 @@ textarea.twelve-word-phrase {
 
 .qr-message {
   font-size: 12px;
-  color: #f7861c; }
+  color: #66ccff; }
 
 div.message-container > div:first-child {
   margin-top: 18px;

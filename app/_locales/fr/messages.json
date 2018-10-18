@@ -59,10 +59,10 @@
   "buy": {
     "message": "Acheter"
   },
-  "buyCoinbase": {
+  "buyCoinbene": {
     "message": "Acheter sur Coinbase"
   },
-  "buyCoinbaseExplainer": {
+  "buyCoinbeneExplainer": {
     "message": "Coinbase est le moyen le plus populaire au monde d'acheter et de vendre du bitcoin, de l'MOAC et du litecoin."
   },
   "cancel": {

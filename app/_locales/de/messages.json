@@ -80,10 +80,10 @@
   "buy": {
     "message": "Kaufen"
   },
-  "buyCoinbase": {
+  "buyCoinbene": {
     "message": "Auf Coinbase kaufen"
   },
-  "buyCoinbaseExplainer": {
+  "buyCoinbeneExplainer": {
     "message": "Coinbase ist die weltweit bekannteste Art und Weise um bitcoin, MOAC und litecoin zu kaufen und verkaufen."
   },
     "ok": {

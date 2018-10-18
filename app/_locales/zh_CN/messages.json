@@ -80,10 +80,10 @@
   "buy": {
     "message": "购买"
   },
-  "buyCoinbase": {
+  "buyCoinbene": {
     "message": "在 Coinbene 上购买"
   },
-  "buyCoinbaseExplainer": {
+  "buyCoinbeneExplainer": {
     "message": "Coinbene 是可以购买墨客的交易所之一。"
   },
   "ok": {
@@ -485,7 +485,7 @@
   "metamaskDescription": {
     "message": "MetaMask is a secure identity vault for MOAC."
   },
-  "metamaskSeedWords": {
+  "moacmaskSeedWords": {
     "message": "MetaMask 助记词"
   },
   "min": {

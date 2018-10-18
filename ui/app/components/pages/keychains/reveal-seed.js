@@ -91,7 +91,7 @@ class RevealSeedPage extends Component {
         h('label.reveal-seed__label', t('yourPrivateSeedPhrase')),
         h(ExportTextContainer, {
           text: this.state.seedWords,
-          filename: t('metamaskSeedWords'),
+          filename: t('moacmaskSeedWords'),
         }),
       ])
     )

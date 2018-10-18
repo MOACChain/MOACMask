@@ -243,7 +243,7 @@ class AccountDropdowns extends Component {
       [
         enableAccountsSelector && h(
           // 'i.fa.fa-angle-down',
-          'div.cursor-pointer.color-orange.accounts-selector',
+          'div.cursor-pointer.color-blue.accounts-selector',
           {
             style: {
               // fontSize: '1.8em',

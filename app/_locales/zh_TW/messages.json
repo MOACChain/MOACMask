@@ -80,10 +80,10 @@
   "buy": {
     "message": "購買"
   },
-  "buyCoinbase": {
+  "buyCoinbene": {
     "message": "在 Coinbene 上購買"
   },
-  "buyCoinbaseExplainer": {
+  "buyCoinbeneExplainer": {
     "message": "Coinbene 是可以购买墨客的交易所之一。"
   },
   "ok": {

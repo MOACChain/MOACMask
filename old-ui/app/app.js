@@ -620,7 +620,7 @@ App.prototype.renderPrimary = function () {
           left: '0px',
         },
       }, [
-        h('i.fa.fa-arrow-left.fa-lg.cursor-pointer.color-orange', {
+        h('i.fa.fa-arrow-left.fa-lg.cursor-pointer.color-blue', {
           onClick: () => props.dispatch(actions.backToAccountDetail(props.selectedAddress)),
           style: {
             marginLeft: '10px',

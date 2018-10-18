@@ -3,7 +3,7 @@ const EventEmitter = require('events').EventEmitter
 const Component = require('react').Component
 const connect = require('react-redux').connect
 const h = require('react-hyperscript')
-const Mascot = require('../components/mascot')
+//const Mascot = require('../components/mascot')
 const actions = require('../../../ui/app/actions')
 const Tooltip = require('../components/tooltip')
 const getCaretCoordinates = require('textarea-caret')
@@ -45,7 +45,8 @@ InitializeMenuScreen.prototype.renderMenu = function (state) {
     h('.initialize-screen.flex-column.flex-center.flex-grow', [
 
       h('img', {
-        src: 'https://lh3.googleusercontent.com/3hWM-FU9nnRvc8yqJ1c_dbljAFMnPtRuhQyUJyXvDTrn9ifLmUhe6H8IQXb8MzZ1O4MRteQCAFcHfxJUKtZMBzp51sOzb_bMIIIiYiruR8Ib93NzJkG9APrYx9nytnFDjO38ac2hM60q4ExLtkHSzc5YQzuapF_n9zrb93qdP-3QUSvchmTMwZMea0NsAJHGDRhtOokfh603br5aHGnUPcYX0-gmtyf6ROKyQ9fiXXzsYYixuAcieZVb4IiyT3yf-HM2FpEIY53eqNnP1aOcKrFVO7vd3AkyWP4haBoeUu0Y62BbL8gauzsnii5_6X4AOZ1Nq2V6HNq-UJAw4Wqr3B1uRGacCNh7vy7TxLEgBzKMWV7hmUk0Yf0Rv9K6IWIE2fXlXEe8NjtruT_vlutPQPuvUlziWWJ6zrNyVdSscfsS3PU0BavL7-jXe6DtdCMQLR7bijnZ_B9mivUOxOxbyQ02t3945c9396V4A2cQFZ0SwWiQ-I1M-op2JC94kKsXgb5D_LjLc7L5z22Pwc09JIQ9pdqoJBahfFF9CxkQvA53wx4ayqagHTU10v6U8h0obaHGDXCuX9mOY4l_ZwmUvEMvQFABkm0Wb5gcuZNQ7XEpz5MJlvLmW7wdFnB4Gg=s512-no',
+        //src: 'https://lh3.googleusercontent.com/3hWM-FU9nnRvc8yqJ1c_dbljAFMnPtRuhQyUJyXvDTrn9ifLmUhe6H8IQXb8MzZ1O4MRteQCAFcHfxJUKtZMBzp51sOzb_bMIIIiYiruR8Ib93NzJkG9APrYx9nytnFDjO38ac2hM60q4ExLtkHSzc5YQzuapF_n9zrb93qdP-3QUSvchmTMwZMea0NsAJHGDRhtOokfh603br5aHGnUPcYX0-gmtyf6ROKyQ9fiXXzsYYixuAcieZVb4IiyT3yf-HM2FpEIY53eqNnP1aOcKrFVO7vd3AkyWP4haBoeUu0Y62BbL8gauzsnii5_6X4AOZ1Nq2V6HNq-UJAw4Wqr3B1uRGacCNh7vy7TxLEgBzKMWV7hmUk0Yf0Rv9K6IWIE2fXlXEe8NjtruT_vlutPQPuvUlziWWJ6zrNyVdSscfsS3PU0BavL7-jXe6DtdCMQLR7bijnZ_B9mivUOxOxbyQ02t3945c9396V4A2cQFZ0SwWiQ-I1M-op2JC94kKsXgb5D_LjLc7L5z22Pwc09JIQ9pdqoJBahfFF9CxkQvA53wx4ayqagHTU10v6U8h0obaHGDXCuX9mOY4l_ZwmUvEMvQFABkm0Wb5gcuZNQ7XEpz5MJlvLmW7wdFnB4Gg=s512-no',
+        src: 'images/moac-512.png',
         style: {
           width: '300px',
           maxWidth: '90%',
@@ -59,7 +60,7 @@ InitializeMenuScreen.prototype.renderMenu = function (state) {
           color: '#7F8082',
           marginBottom: 10,
         },
-      }, 'MetaMaskMOAC'),
+      }, 'MoacMask'),
 
 
       h('div', [
@@ -72,7 +73,7 @@ InitializeMenuScreen.prototype.renderMenu = function (state) {
         }, 'Encrypt your new DEN'),
 
         h(Tooltip, {
-          title: 'Your DEN is your password-encrypted storage within MetaMaskMOAC.',
+          title: 'Your DEN is your password-encrypted storage within MoacMask.',
         }, [
           h('i.fa.fa-question-circle.pointer', {
             style: {
