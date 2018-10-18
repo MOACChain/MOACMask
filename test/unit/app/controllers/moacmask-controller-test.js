@@ -3,7 +3,7 @@ const sinon = require('sinon')
 const clone = require('clone')
 const nock = require('nock')
 const createThoughStream = require('through2').obj
-const MetaMaskController = require('../../../../app/scripts/metamask-controller')
+const MoacMaskController = require('../../../../app/scripts/moacmask-controller')
 const blacklistJSON = require('eth-phishing-detect/src/config')
 const firstTimeState = require('../../../../app/scripts/first-time-state')
 
@@ -14,8 +14,8 @@ const TEST_ADDRESS = '0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc'
 const TEST_SEED_ALT = 'setup olympic issue mobile velvet surge alcohol burger horse view reopen gentle'
 const TEST_ADDRESS_ALT = '0xc42edfcc21ed14dda456aa0756c153f7985d8813'
 
-describe('MetaMaskController', function () {
-  let metamaskController
+describe('MoacMaskController', function () {
+  let moacmaskController
   const sandbox = sinon.createSandbox()
   const noop = () => {}
 
@@ -39,7 +39,7 @@ describe('MetaMaskController', function () {
       .get(/.*/)
       .reply(200)
 
-    metamaskController = new MetaMaskController({
+    moacmaskController = new MoacMaskController({
       showUnapprovedTx: noop,
       showUnconfirmedMessage: noop,
       encryptor: {
@@ -54,10 +54,10 @@ describe('MetaMaskController', function () {
       initState: clone(firstTimeState),
     })
     // disable diagnostics
-    metamaskController.diagnostics = null
+    moacmaskController.diagnostics = null
     // add sinon method spies
-    sandbox.spy(metamaskController.keyringController, 'createNewVaultAndKeychain')
-    sandbox.spy(metamaskController.keyringController, 'createNewVaultAndRestore')
+    sandbox.spy(moacmaskController.keyringController, 'createNewVaultAndKeychain')
+    sandbox.spy(moacmaskController.keyringController, 'createNewVaultAndRestore')
   })
 
   afterEach(function () {
@@ -69,16 +69,16 @@ describe('MetaMaskController', function () {
     const password = 'password'
 
     beforeEach(async function () {
-      await metamaskController.createNewVaultAndKeychain(password)
+      await moacmaskController.createNewVaultAndKeychain(password)
     })
 
     it('removes any identities that do not correspond to known accounts.', async function () {
       const fakeAddress = '0xbad0'
-      metamaskController.preferencesController.addAddresses([fakeAddress])
-      await metamaskController.submitPassword(password)
+      moacmaskController.preferencesController.addAddresses([fakeAddress])
+      await moacmaskController.submitPassword(password)
 
-      const identities = Object.keys(metamaskController.preferencesController.store.getState().identities)
-      const addresses = await metamaskController.keyringController.getAccounts()
+      const identities = Object.keys(moacmaskController.preferencesController.store.getState().identities)
+      const addresses = await moacmaskController.keyringController.getAccounts()
 
       identities.forEach((identity) => {
         assert.ok(addresses.includes(identity), `addresses should include all IDs: ${identity}`)
@@ -93,8 +93,8 @@ describe('MetaMaskController', function () {
   describe('#getGasPrice', function () {
 
     it('gives the 50th percentile lowest accepted gas price from recentBlocksController', async function () {
-      const realRecentBlocksController = metamaskController.recentBlocksController
-      metamaskController.recentBlocksController = {
+      const realRecentBlocksController = moacmaskController.recentBlocksController
+      moacmaskController.recentBlocksController = {
         store: {
           getState: () => {
             return {
@@ -109,23 +109,23 @@ describe('MetaMaskController', function () {
         },
       }
 
-      const gasPrice = metamaskController.getGasPrice()
+      const gasPrice = moacmaskController.getGasPrice()
       assert.equal(gasPrice, '0x3b9aca00', 'accurately estimates 50th percentile accepted gas price')
 
-      metamaskController.recentBlocksController = realRecentBlocksController
+      moacmaskController.recentBlocksController = realRecentBlocksController
     })
   })
 
   describe('#createNewVaultAndKeychain', function () {
     it('can only create new vault on keyringController once', async function () {
-      const selectStub = sandbox.stub(metamaskController, 'selectFirstIdentity')
+      const selectStub = sandbox.stub(moacmaskController, 'selectFirstIdentity')
 
       const password = 'a-fake-password'
 
-      await metamaskController.createNewVaultAndKeychain(password)
-      await metamaskController.createNewVaultAndKeychain(password)
+      await moacmaskController.createNewVaultAndKeychain(password)
+      await moacmaskController.createNewVaultAndKeychain(password)
 
-      assert(metamaskController.keyringController.createNewVaultAndKeychain.calledOnce)
+      assert(moacmaskController.keyringController.createNewVaultAndKeychain.calledOnce)
 
       selectStub.reset()
     })
@@ -134,25 +134,25 @@ describe('MetaMaskController', function () {
   describe('#createNewVaultAndRestore', function () {
     it('should be able to call newVaultAndRestore despite a mistake.', async function () {
       const password = 'what-what-what'
-      await metamaskController.createNewVaultAndRestore(password, TEST_SEED.slice(0, -1)).catch((e) => null)
-      await metamaskController.createNewVaultAndRestore(password, TEST_SEED)
+      await moacmaskController.createNewVaultAndRestore(password, TEST_SEED.slice(0, -1)).catch((e) => null)
+      await moacmaskController.createNewVaultAndRestore(password, TEST_SEED)
 
-      assert(metamaskController.keyringController.createNewVaultAndRestore.calledTwice)
+      assert(moacmaskController.keyringController.createNewVaultAndRestore.calledTwice)
     })
 
     it('should clear previous identities after vault restoration', async () => {
-      await metamaskController.createNewVaultAndRestore('foobar1337', TEST_SEED)
-      assert.deepEqual(metamaskController.getState().identities, {
+      await moacmaskController.createNewVaultAndRestore('foobar1337', TEST_SEED)
+      assert.deepEqual(moacmaskController.getState().identities, {
         [TEST_ADDRESS]: { address: TEST_ADDRESS, name: DEFAULT_LABEL },
       })
 
-      await metamaskController.preferencesController.setAccountLabel(TEST_ADDRESS, 'Account Foo')
-      assert.deepEqual(metamaskController.getState().identities, {
+      await moacmaskController.preferencesController.setAccountLabel(TEST_ADDRESS, 'Account Foo')
+      assert.deepEqual(moacmaskController.getState().identities, {
         [TEST_ADDRESS]: { address: TEST_ADDRESS, name: 'Account Foo' },
       })
 
-      await metamaskController.createNewVaultAndRestore('foobar1337', TEST_SEED_ALT)
-      assert.deepEqual(metamaskController.getState().identities, {
+      await moacmaskController.createNewVaultAndRestore('foobar1337', TEST_SEED_ALT)
+      assert.deepEqual(moacmaskController.getState().identities, {
         [TEST_ADDRESS_ALT]: { address: TEST_ADDRESS_ALT, name: DEFAULT_LABEL },
       })
     })
@@ -162,7 +162,7 @@ describe('MetaMaskController', function () {
     let getApi, state
 
     beforeEach(function () {
-      getApi = metamaskController.getApi()
+      getApi = moacmaskController.getApi()
     })
 
     it('getState', function (done) {
@@ -173,7 +173,7 @@ describe('MetaMaskController', function () {
           state = res
         }
       })
-      assert.deepEqual(state, metamaskController.getState())
+      assert.deepEqual(state, moacmaskController.getState())
       done()
     })
 
@@ -182,12 +182,12 @@ describe('MetaMaskController', function () {
   describe('preferencesController', function () {
 
     it('defaults useBlockie to false', function () {
-      assert.equal(metamaskController.preferencesController.store.getState().useBlockie, false)
+      assert.equal(moacmaskController.preferencesController.store.getState().useBlockie, false)
     })
 
     it('setUseBlockie to true', function () {
-      metamaskController.setUseBlockie(true, noop)
-      assert.equal(metamaskController.preferencesController.store.getState().useBlockie, true)
+      moacmaskController.setUseBlockie(true, noop)
+      assert.equal(moacmaskController.preferencesController.store.getState().useBlockie, true)
     })
 
   })
@@ -207,17 +207,17 @@ describe('MetaMaskController', function () {
           'name': 'Account 2',
         },
       }
-      metamaskController.preferencesController.store.updateState({ identities })
-      metamaskController.selectFirstIdentity()
+      moacmaskController.preferencesController.store.updateState({ identities })
+      moacmaskController.selectFirstIdentity()
     })
 
     it('changes preferences controller select address', function () {
-      const preferenceControllerState = metamaskController.preferencesController.store.getState()
+      const preferenceControllerState = moacmaskController.preferencesController.store.getState()
       assert.equal(preferenceControllerState.selectedAddress, address)
     })
 
     it('changes metamask controller selected address', function () {
-      const metamaskState = metamaskController.getState()
+      const metamaskState = moacmaskController.getState()
       assert.equal(metamaskState.selectedAddress, address)
     })
   })
@@ -232,7 +232,7 @@ describe('MetaMaskController', function () {
       .post('/')
       .reply(200)
 
-      rpcTarget = metamaskController.setCustomRpc(customRPC)
+      rpcTarget = moacmaskController.setCustomRpc(customRPC)
     })
 
     afterEach(function () {
@@ -244,7 +244,7 @@ describe('MetaMaskController', function () {
     })
 
     it('changes the network controller rpc', function () {
-      const networkControllerState = metamaskController.networkController.store.getState()
+      const networkControllerState = moacmaskController.networkController.store.getState()
       assert.equal(networkControllerState.provider.rpcTarget, customRPC)
     })
   })
@@ -253,7 +253,7 @@ describe('MetaMaskController', function () {
     let defaultMetaMaskCurrency
 
     beforeEach(function () {
-      defaultMetaMaskCurrency = metamaskController.currencyController.getCurrentCurrency()
+      defaultMetaMaskCurrency = moacmaskController.currencyController.getCurrentCurrency()
     })
 
     it('defaults to usd', function () {
@@ -261,8 +261,8 @@ describe('MetaMaskController', function () {
     })
 
     it('sets currency to JPY', function () {
-      metamaskController.setCurrentCurrency('JPY', noop)
-      assert.equal(metamaskController.currencyController.getCurrentCurrency(), 'JPY')
+      moacmaskController.setCurrentCurrency('JPY', noop)
+      assert.equal(moacmaskController.currencyController.getCurrentCurrency(), 'JPY')
     })
   })
 
@@ -276,11 +276,11 @@ describe('MetaMaskController', function () {
 
       depositAddress = '3EevLFfB4H4XMWQwYCgjLie1qCAGpd2WBc'
       depositType = 'ETH'
-      shapeShiftTxList = metamaskController.shapeshiftController.store.getState().shapeShiftTxList
+      shapeShiftTxList = moacmaskController.shapeshiftController.store.getState().shapeShiftTxList
     })
 
     it('creates a shapeshift tx', async function () {
-      metamaskController.createShapeShiftTx(depositAddress, depositType)
+      moacmaskController.createShapeShiftTx(depositAddress, depositType)
       assert.equal(shapeShiftTxList[0].depositAddress, depositAddress)
     })
 
@@ -290,7 +290,7 @@ describe('MetaMaskController', function () {
     let addNewAccount
 
     beforeEach(function () {
-      addNewAccount = metamaskController.addNewAccount()
+      addNewAccount = moacmaskController.addNewAccount()
     })
 
     it('errors when an primary keyring is does not exist', async function () {
@@ -298,7 +298,7 @@ describe('MetaMaskController', function () {
         await addNewAccount
         assert.equal(1 === 0)
       } catch (e) {
-        assert.equal(e.message, 'MetamaskController - No HD Key Tree found')
+        assert.equal(e.message, 'MoacMaskController - No HD Key Tree found')
       }
     })
   })
@@ -308,24 +308,24 @@ describe('MetaMaskController', function () {
 
     it('errors when no keying is provided', async function () {
       try {
-        await metamaskController.verifySeedPhrase()
+        await moacmaskController.verifySeedPhrase()
       } catch (error) {
-        assert.equal(error.message, 'MetamaskController - No HD Key Tree found')
+        assert.equal(error.message, 'MoacMaskController - No HD Key Tree found')
       }
     })
 
     beforeEach(async function () {
-      await metamaskController.createNewVaultAndKeychain('password')
-      seedPhrase = await metamaskController.verifySeedPhrase()
+      await moacmaskController.createNewVaultAndKeychain('password')
+      seedPhrase = await moacmaskController.verifySeedPhrase()
     })
 
     it('#placeSeedWords should match the initially created vault seed', function () {
 
-      metamaskController.placeSeedWords((err, result) => {
+      moacmaskController.placeSeedWords((err, result) => {
         if (err) {
          console.log(err)
         } else {
-          getConfigSeed = metamaskController.configManager.getSeedWords()
+          getConfigSeed = moacmaskController.configManager.getSeedWords()
           assert.equal(result, seedPhrase)
           assert.equal(result, getConfigSeed)
         }
@@ -334,8 +334,8 @@ describe('MetaMaskController', function () {
     })
 
     it('#addNewAccount', async function () {
-      await metamaskController.addNewAccount()
-      const getAccounts = await metamaskController.keyringController.getAccounts()
+      await moacmaskController.addNewAccount()
+      const getAccounts = await moacmaskController.keyringController.getAccounts()
       assert.equal(getAccounts.length, 2)
     })
   })
@@ -343,13 +343,13 @@ describe('MetaMaskController', function () {
   describe('#resetAccount', function () {
 
     beforeEach(function () {
-      const selectedAddressStub = sinon.stub(metamaskController.preferencesController, 'getSelectedAddress')
-      const getNetworkstub = sinon.stub(metamaskController.txController.txStateManager, 'getNetwork')
+      const selectedAddressStub = sinon.stub(moacmaskController.preferencesController, 'getSelectedAddress')
+      const getNetworkstub = sinon.stub(moacmaskController.txController.txStateManager, 'getNetwork')
 
       selectedAddressStub.returns('0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc')
       getNetworkstub.returns(42)
 
-      metamaskController.txController.txStateManager._saveTxList([
+      moacmaskController.txController.txStateManager._saveTxList([
         { id: 1, status: 'unapproved', metamaskNetworkId: currentNetworkId, txParams: {from: '0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc'} },
         { id: 2, status: 'rejected', metamaskNetworkId: 32, txParams: {} },
         { id: 3, status: 'submitted', metamaskNetworkId: currentNetworkId, txParams: {from: '0xB09d8505E1F4EF1CeA089D47094f5DD3464083d4'} },
@@ -357,25 +357,25 @@ describe('MetaMaskController', function () {
     })
 
     it('wipes transactions from only the correct network id and with the selected address', async function () {
-      await metamaskController.resetAccount()
-      assert.equal(metamaskController.txController.txStateManager.getTx(1), undefined)
+      await moacmaskController.resetAccount()
+      assert.equal(moacmaskController.txController.txStateManager.getTx(1), undefined)
     })
   })
 
   describe('#clearSeedWordCache', function () {
 
     it('should have set seed words', function () {
-      metamaskController.configManager.setSeedWords('test words')
-      const getConfigSeed = metamaskController.configManager.getSeedWords()
+      moacmaskController.configManager.setSeedWords('test words')
+      const getConfigSeed = moacmaskController.configManager.getSeedWords()
       assert.equal(getConfigSeed, 'test words')
     })
 
     it('should clear config seed phrase', function () {
-      metamaskController.configManager.setSeedWords('test words')
-      metamaskController.clearSeedWordCache((err, result) => {
+      moacmaskController.configManager.setSeedWords('test words')
+      moacmaskController.clearSeedWordCache((err, result) => {
         if (err) console.log(err)
       })
-      const getConfigSeed = metamaskController.configManager.getSeedWords()
+      const getConfigSeed = moacmaskController.configManager.getSeedWords()
       assert.equal(getConfigSeed, null)
     })
 
@@ -384,13 +384,13 @@ describe('MetaMaskController', function () {
   describe('#setCurrentLocale', function () {
 
     it('checks the default currentLocale', function () {
-      const preferenceCurrentLocale = metamaskController.preferencesController.store.getState().currentLocale
+      const preferenceCurrentLocale = moacmaskController.preferencesController.store.getState().currentLocale
       assert.equal(preferenceCurrentLocale, undefined)
     })
 
     it('sets current locale in preferences controller', function () {
-      metamaskController.setCurrentLocale('ja', noop)
-      const preferenceCurrentLocale = metamaskController.preferencesController.store.getState().currentLocale
+      moacmaskController.setCurrentLocale('ja', noop)
+      const preferenceCurrentLocale = moacmaskController.preferencesController.store.getState().currentLocale
       assert.equal(preferenceCurrentLocale, 'ja')
     })
 
@@ -405,16 +405,16 @@ describe('MetaMaskController', function () {
 
     beforeEach(async function () {
 
-      await metamaskController.createNewVaultAndRestore('foobar1337', TEST_SEED_ALT)
+      await moacmaskController.createNewVaultAndRestore('foobar1337', TEST_SEED_ALT)
 
       msgParams = {
         'from': address,
         'data': data,
       }
 
-      metamaskController.newUnsignedMessage(msgParams, noop)
-      metamaskMsgs = metamaskController.messageManager.getUnapprovedMsgs()
-      messages = metamaskController.messageManager.messages
+      moacmaskController.newUnsignedMessage(msgParams, noop)
+      metamaskMsgs = moacmaskController.messageManager.getUnapprovedMsgs()
+      messages = moacmaskController.messageManager.messages
       msgId = Object.keys(metamaskMsgs)[0]
       messages[0].msgParams.metamaskId = parseInt(msgId)
     })
@@ -437,13 +437,13 @@ describe('MetaMaskController', function () {
 
     it('rejects the message', function () {
       const msgIdInt = parseInt(msgId)
-      metamaskController.cancelMessage(msgIdInt, noop)
+      moacmaskController.cancelMessage(msgIdInt, noop)
       assert.equal(messages[0].status, 'rejected')
     })
 
     it('errors when signing a message', async function () {
       try {
-        await metamaskController.signMessage(messages[0].msgParams)
+        await moacmaskController.signMessage(messages[0].msgParams)
       } catch (error) {
         assert.equal(error.message, 'message length is invalid')
       }
@@ -456,7 +456,7 @@ describe('MetaMaskController', function () {
       const msgParams = {
         'data': data,
       }
-      metamaskController.newUnsignedPersonalMessage(msgParams, function (error) {
+      moacmaskController.newUnsignedPersonalMessage(msgParams, function (error) {
         assert.equal(error.message, 'MetaMask Message Signature: from field is required.')
       })
     })
@@ -468,16 +468,16 @@ describe('MetaMaskController', function () {
 
     beforeEach(async function () {
 
-      await metamaskController.createNewVaultAndRestore('foobar1337', TEST_SEED_ALT)
+      await moacmaskController.createNewVaultAndRestore('foobar1337', TEST_SEED_ALT)
 
       msgParams = {
         'from': address,
         'data': data,
       }
 
-      metamaskController.newUnsignedPersonalMessage(msgParams, noop)
-      metamaskPersonalMsgs = metamaskController.personalMessageManager.getUnapprovedMsgs()
-      personalMessages = metamaskController.personalMessageManager.messages
+      moacmaskController.newUnsignedPersonalMessage(msgParams, noop)
+      metamaskPersonalMsgs = moacmaskController.personalMessageManager.getUnapprovedMsgs()
+      personalMessages = moacmaskController.personalMessageManager.messages
       msgId = Object.keys(metamaskPersonalMsgs)[0]
       personalMessages[0].msgParams.metamaskId = parseInt(msgId)
     })
@@ -500,12 +500,12 @@ describe('MetaMaskController', function () {
 
     it('rejects the message', function () {
       const msgIdInt = parseInt(msgId)
-      metamaskController.cancelPersonalMessage(msgIdInt, noop)
+      moacmaskController.cancelPersonalMessage(msgIdInt, noop)
       assert.equal(personalMessages[0].status, 'rejected')
     })
 
     it('errors when signing a message', async function () {
-      await metamaskController.signPersonalMessage(personalMessages[0].msgParams)
+      await moacmaskController.signPersonalMessage(personalMessages[0].msgParams)
       assert.equal(metamaskPersonalMsgs[msgId].status, 'signed')
       assert.equal(metamaskPersonalMsgs[msgId].rawSig, '0x6a1b65e2b8ed53cf398a769fad24738f9fbe29841fe6854e226953542c4b6a173473cb152b6b1ae5f06d601d45dd699a129b0a8ca84e78b423031db5baa734741b')
     })
@@ -521,7 +521,7 @@ describe('MetaMaskController', function () {
     })
 
     it('sets up phishing stream for untrusted communication ', async function () {
-      await metamaskController.blacklistController.updatePhishingList()
+      await moacmaskController.blacklistController.updatePhishingList()
 
       streamTest = createThoughStream((chunk, enc, cb) => {
         assert.equal(chunk.name, 'phishing')
@@ -529,7 +529,7 @@ describe('MetaMaskController', function () {
          cb()
         })
       // console.log(streamTest)
-       metamaskController.setupUntrustedCommunication(streamTest, phishingUrl)
+       moacmaskController.setupUntrustedCommunication(streamTest, phishingUrl)
     })
   })
 
@@ -547,30 +547,30 @@ describe('MetaMaskController', function () {
         done()
       })
 
-      metamaskController.setupTrustedCommunication(streamTest, 'mycrypto.com')
+      moacmaskController.setupTrustedCommunication(streamTest, 'mycrypto.com')
     })
   })
 
   describe('#markAccountsFound', function () {
     it('adds lost accounts to config manager data', function () {
-      metamaskController.markAccountsFound(noop)
-      const configManagerData = metamaskController.configManager.getData()
+      moacmaskController.markAccountsFound(noop)
+      const configManagerData = moacmaskController.configManager.getData()
       assert.deepEqual(configManagerData.lostAccounts, [])
     })
   })
 
   describe('#markPasswordForgotten', function () {
     it('adds and sets forgottenPassword to config data to true', function () {
-      metamaskController.markPasswordForgotten(noop)
-      const configManagerData = metamaskController.configManager.getData()
+      moacmaskController.markPasswordForgotten(noop)
+      const configManagerData = moacmaskController.configManager.getData()
       assert.equal(configManagerData.forgottenPassword, true)
     })
   })
 
   describe('#unMarkPasswordForgotten', function () {
     it('adds and sets forgottenPassword to config data to false', function () {
-      metamaskController.unMarkPasswordForgotten(noop)
-      const configManagerData = metamaskController.configManager.getData()
+      moacmaskController.unMarkPasswordForgotten(noop)
+      const configManagerData = moacmaskController.configManager.getData()
       assert.equal(configManagerData.forgottenPassword, false)
     })
   })

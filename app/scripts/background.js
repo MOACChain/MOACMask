@@ -17,7 +17,7 @@ const Migrator = require('./lib/migrator/')
 const migrations = require('./migrations/')
 const PortStream = require('./lib/port-stream.js')
 const NotificationManager = require('./lib/notification-manager.js')
-const MetamaskController = require('./metamask-controller')
+const MoacMaskController = require('./moacmask-controller')
 const firstTimeState = require('./first-time-state')
 const setupRaven = require('./lib/setupRaven')
 const reportFailedTxToSentry = require('./lib/reportFailedTxToSentry')
@@ -87,7 +87,7 @@ setupMetamaskMeshMetrics()
  */
 
 /**
- * The data emitted from the MetaMaskController.store EventEmitter, also used to initialize the MetaMaskController. Available in UI on React state as state.metamask.
+ * The data emitted from the MoacMaskController.store EventEmitter, also used to initialize the MoacMaskController. Available in UI on React state as state.metamask.
  * @typedef MetaMaskState
  * @property {boolean} isInitialized - Whether the first vault has been created.
  * @property {boolean} isUnlocked - Whether the vault is currently decrypted and accounts are available for selection.
@@ -242,7 +242,7 @@ function setupController (initState, initLangCode) {
   // MetaMask Controller
   //
 
-  const controller = new MetamaskController({
+  const controller = new MoacMaskController({
     // User confirmation callbacks:
     showUnconfirmedMessage: triggerUi,
     unlockAccountMessage: triggerUi,
@@ -255,7 +255,7 @@ function setupController (initState, initLangCode) {
     platform,
     encryptor: isEdge ? new EdgeEncryptor() : undefined,
   })
-  global.metamaskController = controller
+  global.moacmaskController = controller
 
   // report failed transactions to Sentry
   controller.txController.on(`tx:status-update`, (txId, status) => {
@@ -281,7 +281,7 @@ function setupController (initState, initLangCode) {
 
   /**
    * Assigns the given state to the versioned object (with metadata), and returns that.
-   * @param {Object} state - The state object as emitted by the MetaMaskController.
+   * @param {Object} state - The state object as emitted by the MoacMaskController.
    * @returns {VersionedData} The state object wrapped in an object that includes a metadata key.
    */
   function versionifyData (state) {
@@ -429,9 +429,10 @@ function triggerUi () {
 }
 
 // On first install, open a window to MetaMask website to how-it-works.
+// Change this to direct to moacMask page
 extension.runtime.onInstalled.addListener(function (details) {
   if ((details.reason === 'install') && (!METAMASK_DEBUG)) {
-    //extension.tabs.create({url: 'https://metamask.io/#how-it-works'})
+    // extension.tabs.create({url: 'https://metamask.io/#how-it-works'})
     extension.tabs.create({url: 'https://github.com/MOACChain/MOACMask'})
   }
 })

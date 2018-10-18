@@ -1,6 +1,6 @@
 /**
- * @file      The central metamask controller. Aggregates other controllers and exports an api.
- * @copyright Copyright (c) 2018 MetaMask
+ * @file      The central moacmask controller. Aggregates other controllers and exports an api.
+ * @copyright Copyright (c) 2018 MoacMask
  * @license   MIT
  */
 
@@ -18,7 +18,7 @@ const createFilterMiddleware = require('eth-json-rpc-filters')
 const createOriginMiddleware = require('./lib/createOriginMiddleware')
 const createLoggerMiddleware = require('./lib/createLoggerMiddleware')
 const createProviderMiddleware = require('./lib/createProviderMiddleware')
-const setupMultiplex = require('./lib/stream-utils.js').setupMultiplex
+const setupMultiplex = require('./lib/stream-utils').setupMultiplex
 const KeyringController = require('eth-keyring-controller')
 const NetworkController = require('./controllers/network')
 const PreferencesController = require('./controllers/preferences')
@@ -49,7 +49,7 @@ const cleanErrorStack = require('./lib/cleanErrorStack')
 const DiagnosticsReporter = require('./lib/diagnostics-reporter')
 const log = require('loglevel')
 
-module.exports = class MetamaskController extends EventEmitter {
+module.exports = class MoacMaskController extends EventEmitter {
 
   /**
    * @constructor
@@ -537,7 +537,7 @@ log.info('submitPassword:'+accounts.length+' accounts found!');
   async addNewAccount () {
     const primaryKeyring = this.keyringController.getKeyringsByType('HD Key Tree')[0]
     if (!primaryKeyring) {
-      throw new Error('MetamaskController - No HD Key Tree found')
+      throw new Error('MoacMaskController - No HD Key Tree found')
     }
     const keyringController = this.keyringController
     const oldAccounts = await keyringController.getAccounts()
@@ -590,7 +590,7 @@ log.info('submitPassword:'+accounts.length+' accounts found!');
 
     const primaryKeyring = this.keyringController.getKeyringsByType('HD Key Tree')[0]
     if (!primaryKeyring) {
-      throw new Error('MetamaskController - No HD Key Tree found')
+      throw new Error('MoacMaskController - No HD Key Tree found')
     }
 
     const serialized = await primaryKeyring.serialize()
@@ -598,7 +598,7 @@ log.info('submitPassword:'+accounts.length+' accounts found!');
 
     const accounts = await primaryKeyring.getAccounts()
     if (accounts.length < 1) {
-      throw new Error('MetamaskController - No accounts found')
+      throw new Error('MoacMaskController - No accounts found')
     }
 
     try {
@@ -694,7 +694,7 @@ log.info('submitPassword:'+accounts.length+' accounts found!');
    * @returns {Promise<Object>} Full state update.
    */
   signMessage (msgParams) {
-    log.info('MetaMaskController - signMessage')
+    log.info('MoacMaskController - signMessage')
     const msgId = msgParams.metamaskId
 
     // sets the status op the message to 'approved'
@@ -766,7 +766,7 @@ log.info('submitPassword:'+accounts.length+' accounts found!');
    * @returns {Promise<Object>} - A full state update.
    */
   signPersonalMessage (msgParams) {
-    log.info('MetaMaskController - signPersonalMessage')
+    log.info('MoacMaskController - signPersonalMessage')
     const msgId = msgParams.metamaskId
     // sets the status op the message to 'approved'
     // and removes the metamaskId for signing
@@ -834,7 +834,7 @@ log.info('submitPassword:'+accounts.length+' accounts found!');
    * @returns {Object} Full state update.
    */
   signTypedMessage (msgParams) {
-    log.info('MetaMaskController - signTypedMessage')
+    log.info('MoacMaskController - signTypedMessage')
     const msgId = msgParams.metamaskId
     // sets the status op the message to 'approved'
     // and removes the metamaskId for signing

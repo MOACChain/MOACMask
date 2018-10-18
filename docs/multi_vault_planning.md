@@ -13,7 +13,7 @@ ReduxStore(reducer, initState)
 ReduxStore.subscribe(toDisk)
 
 
-### KeyChainManager / idStore 2.0 (maybe just in MetaMaskController)
+### KeyChainManager / idStore 2.0 (maybe just in MoacMaskController)
 	keychains: []
 	getAllAccounts(cb)
 	getAllKeychainViewStates(cb) -> returns [ KeyChainViewState]
@@ -46,7 +46,7 @@ ReduxStore.subscribe(toDisk)
 
 Where they should end up:
 
-##### MetaMaskController
+##### MoacMaskController
 
 - getNetwork()
 
