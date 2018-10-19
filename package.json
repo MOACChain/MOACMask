@@ -1,6 +1,6 @@
 {
-  "name": "metamask-moac",
-  "version": "0.1.0",
+  "name": "MOACMask",
+  "version": "0.1.1",
   "public": true,
   "private": false,
   "scripts": {
