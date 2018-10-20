@@ -77,10 +77,10 @@
   "buy": {
     "message": "खरीदें"
   },
-  "buyCoinbase": {
+  "buyCoinbene": {
     "message": "कॉइनबेस पर खरीदें"
   },
-  "buyCoinbaseExplainer": {
+  "buyCoinbeneExplainer": {
     "message": "बिल्टकोइन, इथीरियम और लाइटकोइन खरीदने और बेचने के लिए दुनिया का सबसे लोकप्रिय तरीका कॉइनबेस है।"
   },
   "cancel": {

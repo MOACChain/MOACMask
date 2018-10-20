@@ -80,10 +80,10 @@
   "buy": {
     "message": "Koupit"
   },
-  "buyCoinbase": {
+  "buyCoinbene": {
     "message": "Nákup na Coinbase"
   },
-  "buyCoinbaseExplainer": {
+  "buyCoinbeneExplainer": {
     "message": "Coinbase je světově nejoblíbenější místo k nákupu a prodeji bitcoinu, etherea nebo litecoinu."
   },
   "ok": {

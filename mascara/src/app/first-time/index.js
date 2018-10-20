@@ -41,7 +41,7 @@ class FirstTimeFlow extends Component {
   static defaultProps = {
     isInitialized: false,
     seedWords: '',
-    noActiveNotices: false,
+    noActiveNotices: true,
   };
 
   renderAppBar () {

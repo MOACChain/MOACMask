@@ -80,10 +80,10 @@
     "buy": {
       "message": "Satın al"
     },
-    "buyCoinbase": {
+    "buyCoinbene": {
       "message": "Coinbase'de satın al"
     },
-    "buyCoinbaseExplainer": {
+    "buyCoinbeneExplainer": {
       "message": "Coinbase bitcoin, MOAC, and litecoin alıp satmanın dünyadaki en popüler yolu"
     },
     "ok": {

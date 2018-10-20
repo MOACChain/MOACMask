@@ -34,7 +34,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MoacMask",
+    "message": "MetaMaskMoac",
     "description": "The name of the application"
   },
   "approved": {
@@ -75,16 +75,16 @@
     "message": "Borrow With Dharma (Beta)"
   },
   "builtInCalifornia": {
-    "message": "MetaMask在加利福尼亚设计和制造。"
+    "message": "MoacMask在加利福尼亚设计和制造。"
   },
   "buy": {
     "message": "购买"
   },
-  "buyCoinbase": {
-    "message": "在 Coinbase 上购买"
+  "buyCoinbene": {
+    "message": "在 Coinbene 上购买"
   },
-  "buyCoinbaseExplainer": {
-    "message": "Coinbase 是世界上最流行的买卖比特币，以太币和莱特币的交易所。"
+  "buyCoinbeneExplainer": {
+    "message": "Coinbene 是可以购买墨客的交易所之一。"
   },
   "ok": {
     "message": "确认"
@@ -193,7 +193,7 @@
     "message": "默认以太坊交易网络为主网。"
   },
   "denExplainer": {
-    "message": "你的 DEN 是存储在 MetaMask 中的已加密密码。"
+    "message": "你的 DEN 是存储在 MoacMask 中的已加密密码。"
   },
   "deposit": {
     "message": "存入"
@@ -206,10 +206,10 @@
     "description": "Tells the user what coin they have selected to deposit with shapeshift"
   },
   "depositEth": {
-    "message": "存入 Eth"
+    "message": "存入 MC"
   },
   "depositMc": {
-    "message": "存入 Ether"
+    "message": "存入 MC"
   },
   "depositFiat": {
     "message": "从 Fiat 存入"
@@ -221,7 +221,7 @@
     "message": "从 ShapeShift 存入"
   },
   "depositShapeShiftExplainer": {
-    "message": "如果你拥有其他加密货币，你可以直接交易并存入 Ether 到你的 MetaMask 钱包。 不需要帐户。"
+    "message": "如果你拥有其他加密货币，你可以直接交易并存入 Moac 到你的 MoacMask 钱包。 不需要帐户。"
   },
   "details": {
     "message": "详情"
@@ -233,7 +233,7 @@
     "message": "直接存入 Ether"
   },
   "directDepositEtherExplainer": {
-    "message": "如果你已经有了一些 Ether，通过直接转入是你的新钱包获取 Ether 的最快捷方式。"
+    "message": "如果你已经有了一些 Moac，通过直接转入是你的新钱包获取 Moac 的最快捷方式。"
   },
   "done": {
     "message": "完成"
@@ -381,7 +381,7 @@
     "message": "导入账户"
   },
   "importAccountMsg": {
-    "message":" Imported accounts will not be associated with your originally created MetaMask account seedphrase. Learn more about imported accounts "
+    "message":" Imported accounts will not be associated with your originally created MoacMask account seedphrase. Learn more about imported accounts "
   },
   "importAnAccount": {
     "message": "导入一个账户"
@@ -428,7 +428,7 @@
     "description": "format for importing an account"
   },
   "keepTrackTokens": {
-    "message": "Keep track of the tokens you’ve bought with your MetaMask account."
+    "message": "Keep track of the tokens you’ve bought with your MoacMask account."
   },
   "kovan": {
     "message": "Kovan 测试网络"
@@ -485,7 +485,7 @@
   "metamaskDescription": {
     "message": "MetaMask is a secure identity vault for MOAC."
   },
-  "metamaskSeedWords": {
+  "moacmaskSeedWords": {
     "message": "MetaMask 助记词"
   },
   "min": {
@@ -498,7 +498,7 @@
     "message": "至少选择一种代币."
   },
   "needMcInWallet": {
-    "message": "使用 MetaMask 与 DAPP 交互，需要你的钱包里有 Ether。"
+    "message": "使用 MoacMask 与 DAPP 交互，需要你的钱包里有 Moac。"
   },
   "needImportFile": {
     "message": "必须选择导入一个文件。",
@@ -857,7 +857,7 @@
     "message": "代币符号"
   },
   "tokenWarning1": {
-    "message": "Keep track of the tokens you’ve bought with your MetaMask account. If you bought tokens using a different account, those tokens will not appear here."
+    "message": "Keep track of the tokens you’ve bought with your MoacMask account. If you bought tokens using a different account, those tokens will not appear here."
   },
   "total": {
     "message": "总量"
@@ -882,7 +882,7 @@
     "description": "Followed by a link (here) to view token balances"
   },
   "twelveWords": {
-    "message": "这12个单词是恢复MetaMask帐户的唯一方法。.\n将它们存放在安全和秘密的地方。."
+    "message": "这12个单词是恢复MoacMask帐户的唯一方法。.\n将它们存放在安全和秘密的地方。."
   },
   "typePassword": {
     "message": "输入你的密码"
@@ -937,7 +937,7 @@
     "message": "警告"
   },
   "welcomeBeta": {
-    "message": "欢迎使用 MetaMask 测试版"
+    "message": "欢迎使用 MoacMask 测试版"
   },
   "whatsThis": {
     "message": "这是什么？"

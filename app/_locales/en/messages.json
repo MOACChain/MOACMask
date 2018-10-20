@@ -83,10 +83,10 @@
   "buy": {
     "message": "Buy"
   },
-  "buyCoinbase": {
+  "buyCoinbene": {
     "message": "Buy on Coinbene"
   },
-  "buyCoinbaseExplainer": {
+  "buyCoinbeneExplainer": {
     "message": "Coinbene is a exchange to buy and sell MOAC."
   },
   "ok": {
@@ -123,7 +123,7 @@
     "message": "Continue"
   },
   "continueToCoinbase": {
-    "message": "Continue to Coinbase"
+    "message": "Continue to Coinbene"
   },
   "contractDeployment": {
     "message": "Contract Deployment"
@@ -497,7 +497,7 @@
   "metamaskDescription": {
     "message": "MoacMask is a secure identity vault for MOAC."
   },
-  "metamaskSeedWords": {
+  "moacmaskSeedWords": {
     "message": "MoacMask Seed Words"
   },
   "min": {

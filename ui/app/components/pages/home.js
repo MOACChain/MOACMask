@@ -206,7 +206,7 @@ class Home extends Component {
             left: '0px',
           },
         }, [
-          h('i.fa.fa-arrow-left.fa-lg.cursor-pointer.color-orange', {
+          h('i.fa.fa-arrow-left.fa-lg.cursor-pointer.color-blue', {
             onClick: () => this.props.dispatch(actions.backToAccountDetail(activeAddress)),
             style: {
               marginLeft: '10px',

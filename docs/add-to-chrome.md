@@ -4,7 +4,7 @@
 * Check "Developer mode".
 * Alternatively, use the URL `chrome://extensions/` in your address bar
 * At the top, click `Load Unpacked Extension`.
-* Navigate to your `MOACMask/dist/chrome` folder.
+* Navigate to your `moacmask-plugin/dist/chrome` folder.
 * Click `Select`.
 * Change to your locale via `chrome://settings/languages`
 * Restart the browser and test the plugin in your locale

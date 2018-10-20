@@ -7,7 +7,7 @@ const setupMultiplex = require('../../app/scripts/lib/stream-utils.js').setupMul
 const DbController = require('idb-global')
 
 const SwPlatform = require('../../app/scripts/platforms/sw')
-const MetamaskController = require('../../app/scripts/metamask-controller')
+const MoacMaskController = require('../../app/scripts/moacmask-controller.js')
 
 const Migrator = require('../../app/scripts/lib/migrator/')
 const migrations = require('../../app/scripts/migrations/')
@@ -66,7 +66,7 @@ async function setupController (initState, client) {
 
   const platform = new SwPlatform()
 
-  const controller = new MetamaskController({
+  const controller = new MoacMaskController({
     // platform specific implementation
     platform,
     // User confirmation callbacks:
@@ -76,7 +76,7 @@ async function setupController (initState, client) {
     // initial state
     initState,
   })
-  global.metamaskController = controller
+  global.moacmaskController = controller
 
   controller.store.subscribe(async (state) => {
     try {

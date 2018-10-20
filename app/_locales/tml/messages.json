@@ -80,10 +80,10 @@
   "buy": {
     "message": "வாங்க"
   },
-  "buyCoinbase": {
+  "buyCoinbene": {
     "message": "கோஇன்பசே வாங்கவும்"
   },
-  "buyCoinbaseExplainer": {
+  "buyCoinbeneExplainer": {
     "message": "கோஇன்பசே பிறகாய்ன் , எதெரியும் மற்றும் ளிட்டசோன் வாங்க மற்றும் விற்க உலகின் மிகவும் பிரபலமான வழி"
   },
   "ok": {

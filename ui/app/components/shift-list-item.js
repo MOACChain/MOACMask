@@ -4,7 +4,7 @@ const PropTypes = require('prop-types')
 const h = require('react-hyperscript')
 const connect = require('react-redux').connect
 const vreme = new (require('vreme'))()
-const explorerLink = require('moac-link').createExplorerLink
+const explorerLink = require('etherscan-link').createExplorerLink
 const actions = require('../actions')
 const addressSummary = require('../util').addressSummary
 

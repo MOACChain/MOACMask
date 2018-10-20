@@ -65,19 +65,19 @@ MetamaskInpageProvider.prototype.send = function (payload) {
   let result = null
   switch (payload.method) {
 
-    case 'eth_accounts':
+    case 'mc_accounts':
       // read from localStorage
       selectedAddress = self.publicConfigStore.getState().selectedAddress
       result = selectedAddress ? [selectedAddress] : []
       break
 
-    case 'eth_coinbase':
+    case 'mc_coinbase':
       // read from localStorage
       selectedAddress = self.publicConfigStore.getState().selectedAddress
       result = selectedAddress || null
       break
 
-    case 'eth_uninstallFilter':
+    case 'mc_uninstallFilter':
       self.sendAsync(payload, noop)
       result = true
       break

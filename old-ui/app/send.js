@@ -75,7 +75,7 @@ SendTransactionScreen.prototype.render = function () {
           },
         }, [
           // back button
-          h('i.fa.fa-arrow-left.fa-lg.cursor-pointer.color-orange', {
+          h('i.fa.fa-arrow-left.fa-lg.cursor-pointer.color-blue', {
             onClick: this.back.bind(this),
           }),
 

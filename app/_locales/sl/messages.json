@@ -77,10 +77,10 @@
   "buy": {
     "message": "Kupi"
   },
-  "buyCoinbase": {
+  "buyCoinbene": {
     "message": "Kupi na Coinbase"
   },
-  "buyCoinbaseExplainer": {
+  "buyCoinbeneExplainer": {
     "message": "Coinbase je najpopularnejši načun za kupovanje in prodajo bitcoinov, MOACa, in litecoina."
   },
   "cancel": {

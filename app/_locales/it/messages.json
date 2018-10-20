@@ -77,10 +77,10 @@
   "buy": {
     "message": "Compra"
   },
-  "buyCoinbase": {
+  "buyCoinbene": {
     "message": "Compra su Coinbase"
   },
-  "buyCoinbaseExplainer": {
+  "buyCoinbeneExplainer": {
     "message": "Coinbase è il servizio più popolare al mondo per comprare e vendere bitcoin, MOAC e litecoin."
   },
   "cancel": {
