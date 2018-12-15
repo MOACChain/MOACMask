@@ -10,7 +10,7 @@ In order to help users and developers access MOAC blockchain, we modified the [M
 - Use moac-tx to replace the ethereumjs-tx for sign a raw transaction object;
 - Use moac-provider-engine to replace the web3-provider-enginer for sending a signed Transaction to MOAC network;
 - Use moac-link to provide outside link with MOAC explorer for displaying account info.
-- Connect with https://moacwalletonline.com instead of infurno.io to provide online services.
+- Connect with https://gateway.moac.io instead of infurno.io to provide online services.
 
 MoacMask is a software for users to manage accounts, for sites to easily propose actions to users, and for users to coherently review actions before approving them. We build on this rapidly evolving set of protocols with the goal of empowering the most people to the greatest degree, and aspire to continuously evolve our offering to pursue that goal.
 
@@ -26,7 +26,7 @@ If you're a web dapp developer, we welcome you to join us to further develop thi
 
 ### Current Dapp Developers
 
-- If you have a Dapp on Ethereum, and you want to move to MOAC network, you can checkout our website for further development.
+- If you have a Dapp on Ethereum, and you want to move to MOAC network, you can checkout our website for instructions. 
 - At this moment, MOACMask only supports MotherChain Dapps, MicroChain supports is under developing.
 
 ## Building locally
