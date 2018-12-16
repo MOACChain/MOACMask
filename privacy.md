@@ -1,6 +1,6 @@
-#MOACMask
+# MOACMask
 
-#PRIVACY POLICY
+# PRIVACY POLICY
 
 Last Updated: December 15, 2018
 
@@ -48,7 +48,7 @@ We also use Google Analytics to help us offer you an optimized user experience. 
 Information we will never collect. We will never ask you to share your private keys or wallet seed. Never trust anyone or any site that asks you to enter your private keys or wallet seed. 
 
 
-##USE OF PERSONAL INFORMATION
+## USE OF PERSONAL INFORMATION
 
 
 To provide our service
@@ -85,7 +85,7 @@ We may use your personal information to protect, investigate, and deter against 
 
 
 
-SHARING OF PERSONAL INFORMATION
+## SHARING OF PERSONAL INFORMATION
 
 
 We do not share or sell the personal information that you provide us with other organizations without your express consent, except as described in this Privacy Policy. We disclose personal information to third parties under the following circumstances:
@@ -102,14 +102,14 @@ Other. You may permit us to share your personal information with other companies
 We may also share aggregated and/or anonymized data with others for their own uses.
 
 
-INTERNATIONAL TRANSFER
+## INTERNATIONAL TRANSFER
 
 The Company has offices outside of the EU and has affiliates and service providers in the United States and in other countries. Your personal information may be transferred to or from the United States or other locations outside of your state, province, country or other governmental jurisdiction where privacy laws may not be as protective as those in your jurisdiction.
 
 EU users should read the important information provided  below about transfer of personal information outside of the European Economic Area (EEA).
 
 
-HOW INFORMATION IS SECURED
+### HOW INFORMATION IS SECURED
 
 
 We retain information we collect as long as it is necessary and relevant to fulfill the purposes outlined in this privacy policy. In addition, we retain personal information to comply with applicable law where required, prevent fraud, resolve disputes, troubleshoot problems, assist with any investigation, enforce our Terms of Use, and other actions permitted by law. To determine the appropriate retention period for personal information, we consider the amount, nature, and sensitivity of the personal information, the potential risk of harm from unauthorized use or disclosure of your personal information, the purposes for which we process your personal information and whether we can achieve those purposes through other means, and the applicable legal requirements.
@@ -121,7 +121,7 @@ In some circumstances we may anonymize your personal information (so that it can
 We employ industry standard security measures designed to protect the security of all information submitted through the Services. However, the security of information transmitted through the internet can never be guaranteed. We are not responsible for any interception or interruption of any communications through the internet or for changes to or losses of data. Users of the Services are responsible for maintaining the security of any password, biometrics, user ID or other form of authentication involved in obtaining access to password protected or secure areas of any of our digital services. In order to protect you and your data, we may suspend your use of any of the Services, without notice, pending an investigation, if any breach of security is suspected.
 
 
-INFORMATION CHOICES AND CHANGES
+### INFORMATION CHOICES AND CHANGES
 
 
 Accessing, Updating, Correcting, and Deleting your Information
@@ -158,7 +158,7 @@ NOTICE TO CALIFORNIA RESIDENTS
 Under California Civil Code Section 1789.3, California users are entitled to the following consumer rights notice: California residents may reach the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by mail at 1625 North Market Blvd., Sacramento, CA 95834, or by telephone at (916) 445-1254 or (800) 952-5210.
 
 
-### NOTICE TO EU DATA SUBJECTS
+## NOTICE TO EU DATA SUBJECTS
 
 
 Personal Information
@@ -186,13 +186,13 @@ We only use your personal information as permitted by law. We are required to in
 
 
 
-###Use for New Purposes
+### Use for New Purposes
 
 
 We may use your personal information for reasons not described in this Privacy Policy, where we are permitted by law to do so and where the reason is compatible with the purpose for which we collected it. If we need to use your personal information for an unrelated purpose, we will notify you and explain the applicable legal basis for that use. If we have relied upon your consent for a particular use of your personal information, we will seek your consent for any unrelated purpose.
 
 
-###Your Rights
+### Your Rights
 
 
 Under the GDPR, you have certain rights regarding your personal information. You may ask us to take the following actions in relation to your personal information that we hold:
@@ -208,7 +208,7 @@ Under the GDPR, you have certain rights regarding your personal information. You
 
 You can submit these requests by email to moacmask@gmail.com. We may request specific information from you to help us confirm your identity and process your request. Applicable law may require or permit us to decline your request. If we decline your request, we will tell you why, subject to legal restrictions. If you would like to submit a complaint about our use of your personal information or response to your requests regarding your personal information, you may contact us at moacmask@gmail.com or submit a complaint to the data protection regulator in your jurisdiction. You can find your data protection regulator here.
 
-###Cross-Border Data Transfer
+### Cross-Border Data Transfer
 
 Please be aware that your personal data will be transferred to, processed, and stored in the United States. Data protection laws in the U.S. may be different from those in your country of residence. You consent to the transfer of your information, including personal information, to the U.S. as set forth in this Privacy Policy by visiting our site or using our service.
 
@@ -217,22 +217,22 @@ Whenever we transfer your personal information out of the EEA to the U.S. or cou
 Please contact us if you want further information on the specific mechanism used by us when transferring your personal information out of the EEA.
 
 
-##COOKIES POLICY
+## COOKIES POLICY
 
 We understand that your privacy is important to you and are committed to being transparent about the technologies we use. In the spirit of transparency, this policy provides detailed information about how and when we use cookies on our Site.
 
 
-###Do we use Cookies?
+### Do we use Cookies?
 
 Yes. We and our marketing partners, affiliates, and analytics or service providers use cookies, web beacons, or pixels and other technologies to ensure everyone who uses the Site has the best possible experience.
 
 
-###What is a Cookie?
+### What is a Cookie?
 
 A cookie (“Cookie”) is a small text file that is placed on your hard drive by a web page server. Cookies contain information that can later be read by a web server in the domain that issued the cookie to you. Some of the cookies will only be used if you use certain features or select certain preferences, and some cookies will always be used. You can find out more about each cookie by viewing our current cookie list below. We update this list periodically, so there may be additional cookies that are not yet listed. Web beacons, tags and scripts may be used in the Site or in emails to help us to deliver cookies, count visits, understand usage and campaign effectiveness and determine whether an email has been opened and acted upon. We may receive reports based on the use of these technologies by our service/analytics providers on an individual and aggregated basis.
 
 
-###Why do we use Cookies?
+### Why do we use Cookies?
 
 We generally use Cookies for the following purposes:
 
@@ -249,7 +249,7 @@ Some Cookies are necessary for certain uses of the Site, and without such Cookie
 We also use functional Cookies and Cookies from third parties for analysis and marketing purposes.  Functional Cookies enable certain parts of the site to work properly and your user preferences to remain known.  Analysis Cookies, among other things, collect information on how visitors use our Site, the content and products that users view most frequently, and the effectiveness of our third party advertising. Advertising Cookies assist in delivering ads to relevant audiences and having our ads appear at the top of search results. Cookies are either “session” Cookies which are deleted when you end your browser session, or “persistent,” which remain until their deletion by you (discussed below) or the party who served the cookie.  Full details on all of the Cookies used on the Site are available at our Cookie Disclosure table below.
 
 
-###How to disable Cookies. 
+### How to disable Cookies. 
 
 You can generally activate or later deactivate the use of cookies through a functionality built into your web browser. To learn more about how to control cookie settings through your browser:
 
@@ -267,7 +267,7 @@ To control flash cookies, which we may use on our Site from time to time, you ca
 
 We may link the information collected by Cookies with other information we collect from you pursuant to this Privacy Policy and use the combined information as set forth herein.  Similarly, the third parties who serve cookies on our Site may link your name or email address to other information they collect, which may include past purchases made offline or online, or your online usage information. If you are located in the European Economic Area, you have certain rights that are described above under the header “Notice to EU Data Subjects”, including the right to inspect and correct or delete the data that we have about you.
 
-###Cookies Disclosure
+### Cookies Disclosure
 
 | Name of Cookie/Identifier | What does the cookie generally do (e.g., website function and administration, analytics, marketing)? | What does the cookie generally do (e.g., website function and administration, analytics, marketing)? |
 |-------|:-------|:------------:|

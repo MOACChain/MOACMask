@@ -26,7 +26,7 @@ If you're a web dapp developer, we welcome you to join us to further develop thi
 
 ### Current Dapp Developers
 
-- If you have a Dapp on Ethereum, and you want to move to MOAC network, you can checkout our website for instructions. 
+- If you have a Dapp on Ethereum, and you want to move to MOAC network, you can checkout our [wiki website](https://github.com/MOACChain/moac-core/wiki/MoveToMOAC) for more information. 
 - At this moment, MOACMask only supports MotherChain Dapps, MicroChain supports is under developing.
 
 ## Building locally
